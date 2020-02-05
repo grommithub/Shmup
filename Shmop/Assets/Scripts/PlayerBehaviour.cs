@@ -8,6 +8,7 @@ public class PlayerBehaviour : EntityBase
     Vector2 _inputVector = new Vector2();
     [SerializeField] internal Weapon _weapon;
 
+    [SerializeField] private Transform _bulletStart;
     private float _lastShot = 0f;
 
     protected override void Start()
@@ -30,7 +31,7 @@ public class PlayerBehaviour : EntityBase
         if (_weapon == null) return;
         if (Input.GetButton(PlayerInput.shootButton) && Time.time > _lastShot + _weapon._shootSpeed)
         {
-            _weapon.Shoot(transform.position, transform.rotation, false, true);
+            _weapon.Shoot(_bulletStart.position, transform.rotation, false, true);
             _lastShot = Time.time;
 
         }

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ColorController : MonoBehaviour
 {
-    public Color _colour;
+    public Color _currentColour;
+    private Color _desiredColour;
+
     [SerializeField] private Color baseColour = Color.white;
     [SerializeField] private Color _temporaryColour;
     [SerializeField] private float _colorChangeSpeed;
@@ -34,11 +36,14 @@ public class ColorController : MonoBehaviour
     {
         if(Time.time < _tempColourEndTime)
         {
-            _colour = _temporaryColour;
+            _desiredColour = _temporaryColour;
+            _currentColour = _temporaryColour;
         }
         else
         {
-            _colour = baseColour;
+            _desiredColour = baseColour;
         }
+
+        _currentColour = Color.Lerp(_currentColour, _desiredColour, 5f * Time.deltaTime);
     }
 }

@@ -23,7 +23,7 @@ public class PlayerBehaviour : EntityBase
 
     private void Update()
     {
-            Shoot();
+        Shoot();
     }
 
     private void Shoot()
@@ -35,6 +35,12 @@ public class PlayerBehaviour : EntityBase
             _lastShot = Time.time;
 
         }
+    }
+
+    public override void TakeDamage(int incomingDamage)
+    {
+        base.TakeDamage(incomingDamage);
+        _colourController.SetTemporaryColor(Color.red, 0.1f);
     }
 
     protected override void Move()

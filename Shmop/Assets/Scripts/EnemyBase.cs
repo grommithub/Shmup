@@ -7,7 +7,7 @@ public class EnemyBase : EntityBase
     [SerializeField] protected int _onCollideDamage = 1;
     [SerializeField] protected Weapon _weapon;
 
-    protected virtual void OnCollisionEnter(Collision collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.transform.GetComponent<PlayerBehaviour>();
         if(player != null)

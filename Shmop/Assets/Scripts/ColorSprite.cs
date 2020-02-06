@@ -19,7 +19,7 @@ public class ColorSprite : MonoBehaviour
     {
         if(_sprite != null && _controller != null)
         {
-            _sprite.color = _controller._colour;
+            _sprite.color = _controller._currentColour;
         }
     }
 }

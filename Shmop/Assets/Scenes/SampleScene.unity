@@ -481,9 +481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 159029919}
-  - {fileID: 1527278942}
-  - {fileID: 970046918}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   speed: 20
   smoothTime_: 0.3
 --- !u!20 &519420031
@@ -755,12 +755,12 @@ PrefabInstance:
     - target: {fileID: 7535354592957915550, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.17
+      value: -7.43
       objectReference: {fileID: 0}
     - target: {fileID: 7535354592957915550, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.028019857
+      value: 2.17
       objectReference: {fileID: 0}
     - target: {fileID: 7535354592957915550, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}

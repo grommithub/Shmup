@@ -4,7 +4,15 @@
 #
 /[Ll]ibrary/
 /Library/
-\Shmop\Library\
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+
+/Shmop/Library/
+
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/

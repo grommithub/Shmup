@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(ColorSprite))]
 
 public class EntityBase : MonoBehaviour
 {
     [SerializeField] protected int _health;
     [SerializeField] protected float _speed;
-    private ColorSprite _colorSprite;
     protected Rigidbody2D _rb;
 
     [SerializeField] private float shipRotationSpeed, shipRotationAmount;
@@ -18,7 +16,6 @@ public class EntityBase : MonoBehaviour
     protected virtual void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _colorSprite = GetComponent<ColorSprite>();
     }
 
     public int Health
@@ -39,7 +36,6 @@ public class EntityBase : MonoBehaviour
         _health -= incomingDamage;
         if(_health <= 0)
         {
-            //_colorSprite.
             Die();
         }
     }

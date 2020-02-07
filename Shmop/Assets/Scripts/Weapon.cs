@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
         {
             projectileBase.isEnemy = enemy;
             projectileBase.goingRight = goingRight;
+            proj.GetComponent<SpriteRenderer>().flipY = !goingRight;
         }
     }
 }

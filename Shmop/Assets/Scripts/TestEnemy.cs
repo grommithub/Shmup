@@ -5,6 +5,10 @@ using UnityEngine;
 public class TestEnemy : EnemyBase
 {
     [SerializeField] private float verticality, turningSpeed;
+
+    [SerializeField] private float shootInterval;
+    private float lastshot;
+
     protected override void Move()
     {
         _movementVector.y = Mathf.Cos(Time.time * turningSpeed) * verticality;
@@ -16,5 +20,11 @@ public class TestEnemy : EnemyBase
     {
         Move();
         RotateOnMove();
+
+        if(Time.time > lastshot + shootInterval && _weapon != null)
+        {
+            _weapon.Shoot(transform.position, transform.rotation, true, false);
+            lastshot = Time.time;
+        }
     }
 }

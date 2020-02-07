@@ -14,6 +14,8 @@ public class ProjectileBase : MonoBehaviour
     internal bool goingRight;
     private float directionMultiplier = 1;
     protected Rigidbody2D _rb;
+
+    [SerializeField] private GameObject explosion;
     private void Start()
     {
         if (!goingRight) directionMultiplier *= -1;
@@ -32,6 +34,14 @@ public class ProjectileBase : MonoBehaviour
         if((ent is PlayerBehaviour && isEnemy) || (ent is EnemyBase && !isEnemy))
         {
             ent.TakeDamage(damage);
+            GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
+
+            float r = Random.Range(.75f, 1.25f);
+
+            expl.transform.localScale = new Vector3(r, r, 1.0f);
+            
+            Destroy(expl, 1f);
+
             Destroy(this.gameObject, 0f);
         }
     }

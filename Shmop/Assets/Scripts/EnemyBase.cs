@@ -16,6 +16,15 @@ public class EnemyBase : EntityBase
         }
     }
 
+    public override void TakeDamage(int incomingDamage)
+    {
+        base.TakeDamage(incomingDamage);
+        if(_colourSprite != null)
+        {
+            _colourSprite.ChangeColour(Color.red, 0.1f);
+        }
+    }
+
     void Shoot()
     {
         if (_weapon != null) _weapon.Shoot(transform.position, transform.rotation, true, true);

@@ -10,7 +10,12 @@ public class EntityBase : MonoBehaviour
     [SerializeField] protected int _health;
     [SerializeField] protected float _speed;
     protected static ColorController _colourController;
+    protected ColorSprite _colourSprite;
     protected Rigidbody2D _rb;
+
+    [SerializeField] protected GameObject explosion;
+    [SerializeField] private int explosions;
+    [SerializeField] private float maxExplosionDistance;
 
     [SerializeField] private float shipRotationSpeed, shipRotationAmount;
     protected Vector2 _movementVector;
@@ -19,6 +24,8 @@ public class EntityBase : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _colourController = GameObject.FindObjectOfType<ColorController>();
+        _colourSprite = GetComponent<ColorSprite>();
+
     }
 
     public int Health
@@ -55,7 +62,19 @@ public class EntityBase : MonoBehaviour
 
     private void Die()
     {
-        print("DIE!");
+        for(int i = 0; i < explosions; i++)
+        {
+            float x, y, s;
+            x = Random.Range(-maxExplosionDistance, maxExplosionDistance);
+            y = Random.Range(-maxExplosionDistance, maxExplosionDistance);
+            s = Random.Range(0.75f, 1.25f);
+
+            Vector3 offset = new Vector3(x, y, 0f);
+
+            GameObject expl = Instantiate(explosion, transform.position + offset, Quaternion.identity);
+            expl.transform.localScale = new Vector3(s, s, 1f);
+            expl.GetComponent<AnimationDelay>().SetWaitTime(0.05f * i);
+        }
 
         Destroy(this.gameObject, 0.0f);
     }

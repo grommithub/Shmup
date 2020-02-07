@@ -18,7 +18,7 @@ public class RandomSpawner : MonoBehaviour
 
     private void Update()
     {
-        if(Time.time < lastSpawn + interval)
+        if(Time.time > lastSpawn + interval)
         {
             float y = Random.Range(minY + 3, maxY - 3);
             Instantiate(spawnItem, new Vector3(xPos, y, 0f), Quaternion.identity);

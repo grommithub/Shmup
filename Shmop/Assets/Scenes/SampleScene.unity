@@ -222,15 +222,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81035887}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eea63140c42fbd64e87fab10993b6fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 4
-  xPos: 3.6
   spawnItem: {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833,
     type: 3}
+  interval: 1
+  xPos: 3.6
 --- !u!4 &182180349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7535354592957915550, guid: f94c8951bd7deb0478fbdab8195d9fd0,
@@ -397,12 +397,17 @@ PrefabInstance:
     - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
       propertyPath: _speed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
       propertyPath: _weapon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
+        type: 3}
+      propertyPath: explosions
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
@@ -476,12 +481,17 @@ PrefabInstance:
     - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
       propertyPath: _speed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
       propertyPath: _weapon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
+        type: 3}
+      propertyPath: explosions
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
@@ -586,6 +596,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _weapon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010130404623204397, guid: f4e538ccc7934e24eaef9bee3e51f833,
+        type: 3}
+      propertyPath: explosions
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833,
         type: 3}
@@ -712,6 +727,22 @@ PrefabInstance:
         type: 3}
       propertyPath: _health
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826592536583668727, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+        type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
+        type: 3}
+    - target: {fileID: 8826592536583668727, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+        type: 3}
+      propertyPath: explosions
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826592536583668727, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+        type: 3}
+      propertyPath: maxExplosionDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}

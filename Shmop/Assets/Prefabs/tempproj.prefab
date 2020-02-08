@@ -134,7 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46425b86bf6cff47bf531b94b67f729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  _muzzleFlash: {fileID: -8092295105046505211, guid: 8908e483e133cd84eb3bcd8e25615d66,
+    type: 3}
+  _normalSprite: {fileID: 0}
+  speed: 15
   damage: 1
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
@@ -150,3 +153,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1100a13cb1100345bd72c9dc9527585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ownColour: {r: 0, g: 0, b: 0, a: 0}

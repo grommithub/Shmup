@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3010130404623204399}
   - component: {fileID: 3010130404623204392}
   - component: {fileID: 3010130404623204393}
+  - component: {fileID: 987730608}
   m_Layer: 0
   m_Name: TempEnemy
   m_TagString: Untagged
@@ -119,16 +120,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a782e3da8cb3743be3dcdaa990c30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxhHealth: 2
   _health: 2
   _speed: 1
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
-  explosions: 10
+  explosions: 5
   maxExplosionDistance: 1
-  shipRotationSpeed: 6
-  shipRotationAmount: -6
+  _rotationSpeed: 5
+  _rotationAmount: -6
   _onCollideDamage: 1
   _weapon: {fileID: 3010130404623204393}
+  _drop: {fileID: 0}
   verticality: 5
   turningSpeed: 2
   shootInterval: 0.75
@@ -142,7 +145,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -186,3 +189,22 @@ MonoBehaviour:
   _shootSpeed: 2
   projectile: {fileID: 4011619365300161251, guid: e2607190332c67e4c9ff3471ffa19ff1,
     type: 3}
+--- !u!114 &987730608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3010130404623205330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc99a1ecfcfa4c4cbcd742e127d819b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalOutcomes: 0
+  noDropOutcomes: 10
+  itemDrops:
+  - outComes: 1
+    drop: {fileID: 7307028008448342235, guid: 6cd3d90853f133543890ef1b36c2c021, type: 3}
+    firstIndex: 0
+    lastIndex: 0

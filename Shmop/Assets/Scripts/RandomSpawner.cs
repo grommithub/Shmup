@@ -12,7 +12,7 @@ public class RandomSpawner : MonoBehaviour
     {
         Camera cam = Camera.main;
 
-        minY = cam.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).y;
+        minY = cam.ScreenToWorldPoint(Vector3.zero).y;
         maxY = cam.ScreenToWorldPoint(new Vector3(0f, Screen.height, 0f)).y;
     }
 

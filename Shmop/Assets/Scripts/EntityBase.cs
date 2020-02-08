@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
+    [SerializeField] protected int _maxHealth;
     [SerializeField] protected int _health;
     [SerializeField] protected float _speed;
     protected static ColorController _colourController;
@@ -17,11 +18,13 @@ public class EntityBase : MonoBehaviour
     [SerializeField] private int explosions;
     [SerializeField] private float maxExplosionDistance;
 
-    [SerializeField] private float shipRotationSpeed, shipRotationAmount;
+    [SerializeField] private float _rotationSpeed, _rotationAmount;
     protected Vector2 _movementVector;
 
     protected virtual void Start()
     {
+        _health = _maxHealth;
+
         _rb = GetComponent<Rigidbody2D>();
         _colourController = GameObject.FindObjectOfType<ColorController>();
         _colourSprite = GetComponent<ColorSprite>();
@@ -33,6 +36,10 @@ public class EntityBase : MonoBehaviour
         get
         {
             return _health;
+        }
+        set
+        {
+            _health = value;
         }
     }
 
@@ -54,13 +61,13 @@ public class EntityBase : MonoBehaviour
     {
         float rotation = 0;
         if (Mathf.Abs(_rb.velocity.y) > 0.1f)
-            rotation = Mathf.Sign(_rb.velocity.y) * shipRotationAmount;
+            rotation = Mathf.Sign(_rb.velocity.y) * _rotationAmount;
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, rotation), shipRotationSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, rotation), _rotationSpeed * Time.deltaTime);
 
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         for(int i = 0; i < explosions; i++)
         {

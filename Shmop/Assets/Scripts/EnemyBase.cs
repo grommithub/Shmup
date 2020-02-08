@@ -6,7 +6,13 @@ public class EnemyBase : EntityBase
 {
     [SerializeField] protected int _onCollideDamage = 1;
     [SerializeField] protected Weapon _weapon;
+    [SerializeField] protected DropItem _drop;
 
+    protected override void Start()
+    {
+        _drop = GetComponent<DropItem>();
+        base.Start();
+    }
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.transform.GetComponent<PlayerBehaviour>();
@@ -25,7 +31,17 @@ public class EnemyBase : EntityBase
         }
     }
 
-    void Shoot()
+    protected override void Die()
+    {
+        if (_drop != null)
+        {
+            _drop.GetRandomDrop();
+        }
+        else print("thing doesn't exist");
+
+        base.Die();
+    }
+    private void Shoot()
     {
         if (_weapon != null) _weapon.Shoot(transform.position, transform.rotation, true, true);
     }

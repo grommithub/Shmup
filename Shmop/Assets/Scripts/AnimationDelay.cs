@@ -24,6 +24,7 @@ public class AnimationDelay : MonoBehaviour
         if (Time.time > _spawnTime + _waitTime)
         {
             _animator.enabled = true;
+            Destroy(gameObject, 1f);
         }
     }
 }

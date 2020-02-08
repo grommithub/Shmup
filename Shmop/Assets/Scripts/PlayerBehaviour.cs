@@ -36,6 +36,13 @@ public class PlayerBehaviour : EntityBase
 
         }
     }
+    public void GiveHealth(int healthBonus)
+    {
+        _health += healthBonus;
+        _health = Mathf.Min(_health, _maxHealth);
+
+        _colourController.SetTemporaryColor(Color.green, 0.1f * healthBonus);
+    }
 
     public override void TakeDamage(int incomingDamage)
     {

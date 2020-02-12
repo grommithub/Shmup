@@ -25,15 +25,13 @@ public class DropItem : MonoBehaviour
 
         if (r <= noDropOutcomes)
         {
-            print("no drop");
             return;
         }
 
         for(int i = 0; i < itemDrops.Count; i++)
         {
             if(r >= itemDrops[i].firstIndex && r <= itemDrops[i].lastIndex)
-            {
-                print("Drop!");
+            { 
                 Instantiate(itemDrops[i].drop, transform.position, Quaternion.identity);
                 return;
             }

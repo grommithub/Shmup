@@ -9,13 +9,14 @@ public class Scrolling_Background : MonoBehaviour
     public float bg_speed_ = 0f; //speed of background scrolling
     public Renderer bg_renderer_; //put the mesh renderer here
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetSpeed(float speed)
     {
-        
+        bg_speed_ = speed;
     }
+    public void SetStretch(float stretch)
+    {
 
-    // Update is called once per frame
+    }
     void Update()
     {
         bg_renderer_.material.mainTextureOffset += new Vector2(bg_speed_ * Time.deltaTime, 0f); 

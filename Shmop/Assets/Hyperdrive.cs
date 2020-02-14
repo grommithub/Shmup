@@ -13,9 +13,8 @@ public class Hyperdrive : MonoBehaviour
     private float _distance;
 
     [SerializeField] private float _hyperDrivespeed = 30f;
-
-
-    [SerializeField]private float _goToMiddleSpeed = 3f;
+    [SerializeField] private float _goToMiddleSpeed = 3f;
+    [SerializeField] private float _stretch = 1.25f;
     private void Start()
     {
         _middle = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/3, Screen.height/2, 0f));
@@ -43,7 +42,7 @@ public class Hyperdrive : MonoBehaviour
         else
         {
             transform.position += (Vector3.right * _hyperDrivespeed * Time.deltaTime);
-            transform.localScale = new Vector3(2f, 1f, 1f);
+            transform.localScale = new Vector3(_stretch, 1f, 1f);
         }
     }
 }

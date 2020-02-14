@@ -23,7 +23,7 @@ public class TestEnemy : EnemyBase
 
         if(Time.time > lastshot + shootInterval && _weapon != null)
         {
-            _weapon.Shoot(transform.position, transform.rotation, true, false);
+            _weapon.Shoot(transform.position - Vector3.right, transform.rotation, true, false);
             lastshot = Time.time;
         }
     }

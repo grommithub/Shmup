@@ -44,6 +44,12 @@ public class PlayerBehaviour : EntityBase
         _colourController.SetTemporaryColor(Color.green, 0.1f * healthBonus);
     }
 
+    protected override void Die()
+    {
+        _colourController.SetBaseColour(Color.red);
+        base.Die();
+    }
+
     public override void TakeDamage(int incomingDamage)
     {
         base.TakeDamage(incomingDamage);

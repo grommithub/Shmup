@@ -26,6 +26,7 @@ public class Hyperdrive : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.H) && !_centering && !_hyperDriving)
         {
+            GetComponent<Animator>().SetBool("Spinning", true);
             _hyperDriving = true;
             _centering = true;
              

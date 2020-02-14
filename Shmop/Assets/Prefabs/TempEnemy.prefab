@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a782e3da8cb3743be3dcdaa990c30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxhHealth: 2
+  _maxHealth: 2
   _health: 2
   _speed: 1
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16865e408434b0441ab97316eada5b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shootSpeed: 2
+  _shootSpeed: 3
   projectile: {fileID: 4011619365300161251, guid: e2607190332c67e4c9ff3471ffa19ff1,
     type: 3}
 --- !u!114 &987730608
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalOutcomes: 0
-  noDropOutcomes: 10
+  noDropOutcomes: 5
   itemDrops:
   - outComes: 1
     drop: {fileID: 7307028008448342235, guid: 6cd3d90853f133543890ef1b36c2c021, type: 3}

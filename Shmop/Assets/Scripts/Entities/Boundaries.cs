@@ -8,7 +8,7 @@ public class Boundaries : MonoBehaviour
     private float ObjectWidth_;
     private float ObjectHeight_;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         ScreenBoundaries_ = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));

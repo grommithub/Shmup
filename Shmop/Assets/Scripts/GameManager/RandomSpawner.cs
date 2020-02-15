@@ -44,7 +44,7 @@ public class RandomSpawner : MonoBehaviour
         {
             float y = Random.Range(_minY + 3, _maxY - 3);
             GameObject e = Instantiate(_spawnItem, new Vector3(_xPos, y, 0f), Quaternion.identity);
-            e.transform.SetParent()
+            //e.transform.SetParent()
             yield return new WaitForSeconds(_interval);
         }
     }

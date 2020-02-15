@@ -13,20 +13,12 @@ public class Hyperdrive : MonoBehaviour
     
     private bool _hyperDriving;
     private bool _centering;
-<<<<<<< Updated upstream
-    private float _distance;
-
-    [SerializeField] private float _hyperDrivespeed = 30f;
-    [SerializeField] private float _goToMiddleSpeed = 3f;
-    [SerializeField] private float _stretch = 1.25f;
-=======
 
     private Vector2 _middle = new Vector2();
     private Vector2 _startOffset = new Vector2();
     
     private float _centerStartTime;
 
->>>>>>> Stashed changes
     private void Start()
     {
         _middle = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/3, Screen.height/2, 0f));
@@ -36,13 +28,10 @@ public class Hyperdrive : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.H) && !_centering && !_hyperDriving)
         {
-<<<<<<< Updated upstream
-=======
             _startOffset = (Vector2)transform.position - _middle;
             _centerStartTime = Time.time;
 
             _startCentering.Invoke();
->>>>>>> Stashed changes
             _hyperDriving = true;
             _centering = true;
         }
@@ -63,14 +52,9 @@ public class Hyperdrive : MonoBehaviour
         }
         else
         {
-<<<<<<< Updated upstream
-            transform.position += (Vector3.right * _hyperDrivespeed * Time.deltaTime);
-            transform.localScale = new Vector3(_stretch, 1f, 1f);
-=======
 
             transform.Translate(Vector3.right * _hyperDrivespeed * Time.deltaTime);
             transform.localScale = new Vector3(2f, 1f, 1f);
->>>>>>> Stashed changes
         }
         transform.rotation = Quaternion.identity;
     }

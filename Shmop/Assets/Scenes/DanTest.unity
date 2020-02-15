@@ -192,9 +192,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< Updated upstream:Shmop/Assets/Scenes/SampleScene.unity
       - m_Target: {fileID: 2126883910}
         m_MethodName: SetSpeed
         m_Mode: 4
+=======
+      - m_Target: {fileID: 81035890}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1932953554}
+        m_MethodName: SetHyperdriveValues
+        m_Mode: 1
+>>>>>>> Stashed changes:Shmop/Assets/Scenes/DanTest.unity
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -203,8 +220,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< Updated upstream:Shmop/Assets/Scenes/SampleScene.unity
   _hyperDrivespeed: 50
   _goToMiddleSpeed: 3
+=======
+  _hyperDrivespeed: 7
+  _goToMiddleSpeed: 1
+>>>>>>> Stashed changes:Shmop/Assets/Scenes/DanTest.unity
 --- !u!114 &61364313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,6 +439,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -432,6 +455,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddee251aa453ee34f8ed8adebdd94670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -773,8 +808,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream:Shmop/Assets/Scenes/SampleScene.unity
     m_RemovedComponents: []
+=======
+    - target: {fileID: 1103495524039679299, guid: c3dd3b98ff1d7364c84e1297169443fc,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103495524039679299, guid: c3dd3b98ff1d7364c84e1297169443fc,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1103495524039679296, guid: c3dd3b98ff1d7364c84e1297169443fc, type: 3}
+>>>>>>> Stashed changes:Shmop/Assets/Scenes/DanTest.unity
   m_SourcePrefab: {fileID: 100100000, guid: c3dd3b98ff1d7364c84e1297169443fc, type: 3}
+--- !u!1 &1932953553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1103495524039679297, guid: c3dd3b98ff1d7364c84e1297169443fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1379241056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1932953554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932953553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0a6f6fdcaab5a4a9f669b7404562b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bg_speed_: 0.3
+  bg_renderer_: {fileID: 1932953555}
+  hyper_drived_speed_: 2
+  bg_stretch_: 0.3
+  acceleration_: 10
+--- !u!23 &1932953555 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1103495524039679299, guid: c3dd3b98ff1d7364c84e1297169443fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1379241056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2106949416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,18 +1081,6 @@ MonoBehaviour:
       m_Calls: []
   _hyperDrivespeed: 30
   _goToMiddleSpeed: 3
---- !u!114 &2126883910 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1103495524039679296, guid: c3dd3b98ff1d7364c84e1297169443fc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1379241056}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b6337f4a97a00e4c9814bc1685acec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3010130404554621484
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,11 +7,18 @@ public class TestEnemy : EnemyBase
     [SerializeField] private float verticality, turningSpeed;
 
     [SerializeField] private float shootInterval;
-    private float lastshot;
+    private float _lastshot;
+    private float _spawnTime;
 
+    protected override void Start()
+    {
+        //_spawnTime = Time.time;
+        _lastshot = Time.time;
+        base.Start();
+    }
     protected override void Move()
     {
-        _movementVector.y = Mathf.Cos(Time.time * turningSpeed) * verticality;
+        _movementVector.y = Mathf.Cos((Time.time - _spawnTime) * turningSpeed) * verticality;
         _movementVector.x = -_speed;
         Vector2.ClampMagnitude(_movementVector, _speed);
         base.Move();
@@ -21,10 +28,10 @@ public class TestEnemy : EnemyBase
         Move();
         RotateOnMove();
 
-        if(Time.time > lastshot + shootInterval && _weapon != null)
+        if(Time.time > _lastshot + shootInterval && _weapon != null)
         {
             _weapon.Shoot(transform.position - Vector3.right, transform.rotation, true, false);
-            lastshot = Time.time;
+            _lastshot = Time.time;
         }
     }
 }

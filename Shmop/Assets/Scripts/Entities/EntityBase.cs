@@ -81,6 +81,7 @@ public class EntityBase : MonoBehaviour
             GameObject expl = Instantiate(explosion, transform.position + offset, Quaternion.identity);
             expl.transform.localScale = new Vector3(s, s, 1f);
             expl.GetComponent<AnimationDelay>().SetWaitTime(0.05f * i);
+            expl.transform.localScale *= maxExplosionDistance;
         }
 
         Destroy(this.gameObject, 0.0f);

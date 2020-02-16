@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4011619365300161278}
   - component: {fileID: 4011619365300161249}
   - component: {fileID: 4011619365300161248}
-  - component: {fileID: -8388893846175954211}
+  - component: {fileID: -8779897787412900325}
   m_Layer: 0
   m_Name: tempproj
   m_TagString: Untagged
@@ -141,7 +141,7 @@ MonoBehaviour:
   damage: 1
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
---- !u!114 &-8388893846175954211
+--- !u!114 &-8779897787412900325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -21,12 +21,7 @@ public class RandomSpawner : MonoBehaviour
 
     private void Update()
     {
-        //if(Time.time > _lastSpawn + _interval)
-        //{
-        //    float y = Random.Range(_minY + 3, _maxY - 3);
-        //    Instantiate(_spawnItem, new Vector3(_xPos, y, 0f), Quaternion.identity);
-        //    _lastSpawn = Time.time;
-        //}
+
     }
 
     public void SpawnWave(GameObject enemy, int amount, float interval)
@@ -42,11 +37,10 @@ public class RandomSpawner : MonoBehaviour
     {
         for(int i = 0; i < _enemiesToSpawn; i++)
         {
-            float y = Random.Range(_minY + 3, _maxY - 3);
+            float y = Random.Range(_minY + 5, _maxY - 5);
             GameObject e = Instantiate(_spawnItem, new Vector3(_xPos, y, 0f), Quaternion.identity);
-            //e.transform.SetParent()
+            if(_enemyParent != null) e.transform.SetParent(_enemyParent);
             yield return new WaitForSeconds(_interval);
         }
     }
-
 }

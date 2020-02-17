@@ -33,5 +33,7 @@ public class TestEnemy : EnemyBase
             _weapon.Shoot(transform.position - Vector3.right, transform.rotation, true, false);
             _lastshot = Time.time;
         }
+
+        if (transform.position.x < -10f) Destroy(this.gameObject);
     }
 }

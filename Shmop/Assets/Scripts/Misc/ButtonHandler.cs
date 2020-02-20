@@ -11,6 +11,15 @@ public class ButtonHandler : MonoBehaviour
         SceneManager.LoadScene("SampleScene 1");
     }
 
+    public void StartCredits()
+    {
+        SceneManager.LoadScene("CreditScene");
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
     public void QuitGame()
     {
         Application.Quit();

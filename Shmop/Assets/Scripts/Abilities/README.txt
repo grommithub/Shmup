@@ -1,3 +1,9 @@
+-----------------------------------------------DISCLAIMER-----------------------------------------------
+ — Just in case I want to mention that as the text component I used TextMeshPro, not default text
+ — For more clear understanding you can take a look at shield's code, I've tried to comment everything necessay and also attached a link to the live session tutorial 
+ I used for creating this stuff
+-----------------------------------------------DISCLAIMER-----------------------------------------------
+
 A short explanation of how does the system work:
 
 *At first, there are two core files that are being used with any ability: Ability.cs and AbilityCooldown.cs.

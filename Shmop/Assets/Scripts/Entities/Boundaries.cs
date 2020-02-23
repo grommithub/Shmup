@@ -38,19 +38,21 @@ public class Boundaries : MonoBehaviour
     void LateUpdate()
     {
         Vector3 ViewPos_ = transform.position;
-        ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, ScreenBoundaries_.x - ObjectWidth_);
-        ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
 
         switch(mode)
         {
             case Mode.entity:
                 {
+                    ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, ScreenBoundaries_.x - ObjectWidth_);
+                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
                     transform.position = ViewPos_;
                 }
                 break;
             case Mode.bullet:
                 {
-                    if(transform.position != ViewPos_)
+                    ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, (ScreenBoundaries_.x * 1.5f) - ObjectWidth_);
+                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
+                    if (transform.position != ViewPos_)
                         Destroy(gameObject);
                 }
                 break;

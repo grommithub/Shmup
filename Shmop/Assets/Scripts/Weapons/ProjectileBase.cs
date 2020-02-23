@@ -62,4 +62,9 @@ public class ProjectileBase : MonoBehaviour
             Destroy(this.gameObject, 0f);
         }
     }
+    public void GetDeflected()
+    {
+        transform.up = -transform.up;
+        isEnemy = !isEnemy;
+    }
 }

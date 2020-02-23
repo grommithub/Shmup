@@ -23,8 +23,8 @@ public class SceneHandler : MonoBehaviour
         if(ship == null)
         {
             StartCoroutine("LoseScene");
+            return;
         }
-
         if(ship.transform.position.x >= transform.position.x)
         {
             SceneManager.LoadScene("WinScreen");

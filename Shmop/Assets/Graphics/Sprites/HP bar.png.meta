@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 33c25ef5471819c4f9dd95c1fd5232df
+guid: 3a070941a66c5494aa44dfd071155887
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7606900252489813944
-    second: HP bar and percent-Sheet-export_0
+      213: -6784496271874957190
+    second: HP or Hyperdrive-Sheet_0
   - first:
-      213: -8477489285838296835
-    second: HP bar and percent-Sheet-export_1
+      213: -403554267661436155
+    second: HP or Hyperdrive-Sheet_1
   - first:
-      213: -1220497088057634886
-    second: HP bar and percent-Sheet-export_2
+      213: -1534948522341125294
+    second: HP or Hyperdrive-Sheet_2
   - first:
-      213: 4575471785215774842
-    second: HP bar and percent-Sheet-export_3
+      213: -2253948449671764613
+    second: HP or Hyperdrive-Sheet_3
   - first:
-      213: -1018096507452554768
-    second: HP bar and percent-Sheet-export_4
+      213: 5703196173368104608
+    second: HP or Hyperdrive-Sheet_4
   - first:
-      213: -8854210578579994563
-    second: HP bar and percent-Sheet-export_5
+      213: -8408599350847635766
+    second: HP or Hyperdrive-Sheet_5
   - first:
-      213: -1401259162805520770
-    second: HP bar and percent-Sheet-export_6
+      213: 3253110595605694524
+    second: HP or Hyperdrive-Sheet_6
   - first:
-      213: -5614636890489750456
-    second: HP bar and percent-Sheet-export_7
+      213: 3016784589014962954
+    second: HP or Hyperdrive-Sheet_7
   - first:
-      213: 6982954864400123466
-    second: HP bar and percent-Sheet-export_8
+      213: 1405952129231379058
+    second: HP or Hyperdrive-Sheet_8
   - first:
-      213: 4021902245421556809
-    second: HP bar and percent-Sheet-export_9
+      213: -31121747688117175
+    second: HP or Hyperdrive-Sheet_9
   - first:
-      213: 1233966568252779344
-    second: HP bar and percent-Sheet-export_10
+      213: -2159316465711971626
+    second: HP or Hyperdrive-Sheet_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_0
+      name: HP or Hyperdrive-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 840f380068cde6690800000000000000
-      internalID: -7606900252489813944
+      spriteID: a706ee62690a8d1a0800000000000000
+      internalID: -6784496271874957190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_1
+      name: HP or Hyperdrive-Sheet_1
       rect:
         serializedVersion: 2
         x: 500
@@ -154,17 +154,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df8ad620968e95a80800000000000000
-      internalID: -8477489285838296835
+      spriteID: 50b727c1889466af0800000000000000
+      internalID: -403554267661436155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_2
+      name: HP or Hyperdrive-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1003
+        x: 1000
         y: 0
         width: 500
         height: 640
@@ -175,17 +175,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abf0de86d5cef0fe0800000000000000
-      internalID: -1220497088057634886
+      spriteID: 253b8519374c2bae0800000000000000
+      internalID: -1534948522341125294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_3
+      name: HP or Hyperdrive-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1500
+        x: 1506
         y: 0
         width: 500
         height: 640
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a70db95c8575f7f30800000000000000
-      internalID: 4575471785215774842
+      spriteID: b75a543b3dd58b0e0800000000000000
+      internalID: -2253948449671764613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_4
+      name: HP or Hyperdrive-Sheet_4
       rect:
         serializedVersion: 2
         x: 2000
@@ -217,17 +217,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f1893ede9efed1f0800000000000000
-      internalID: -1018096507452554768
+      spriteID: 0a619fde3b2d52f40800000000000000
+      internalID: 5703196173368104608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_5
+      name: HP or Hyperdrive-Sheet_5
       rect:
         serializedVersion: 2
-        x: 2500
+        x: 2510
         y: 0
         width: 500
         height: 640
@@ -238,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d38cb31f3668f1580800000000000000
-      internalID: -8854210578579994563
+      spriteID: ace752ae077ae4b80800000000000000
+      internalID: -8408599350847635766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_6
+      name: HP or Hyperdrive-Sheet_6
       rect:
         serializedVersion: 2
         x: 3000
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7637b2373abd8ce0800000000000000
-      internalID: -1401259162805520770
+      spriteID: c38032ad9de552d20800000000000000
+      internalID: 3253110595605694524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_7
+      name: HP or Hyperdrive-Sheet_7
       rect:
         serializedVersion: 2
         x: 3500
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84cfd87ee7dc412b0800000000000000
-      internalID: -5614636890489750456
+      spriteID: a031c10a995cdd920800000000000000
+      internalID: 3016784589014962954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_8
+      name: HP or Hyperdrive-Sheet_8
       rect:
         serializedVersion: 2
         x: 4000
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46c72fa37078e060800000000000000
-      internalID: 6982954864400123466
+      spriteID: 27a5a023302f28310800000000000000
+      internalID: 1405952129231379058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_9
+      name: HP or Hyperdrive-Sheet_9
       rect:
         serializedVersion: 2
         x: 4500
@@ -322,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 944a2b388caa0d730800000000000000
-      internalID: 4021902245421556809
+      spriteID: 94ca2447fee619ff0800000000000000
+      internalID: -31121747688117175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP bar and percent-Sheet-export_10
+      name: HP or Hyperdrive-Sheet_10
       rect:
         serializedVersion: 2
         x: 5000
@@ -343,8 +343,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05b2a655e0eef1110800000000000000
-      internalID: 1233966568252779344
+      spriteID: 6d2069f6d119802e0800000000000000
+      internalID: -2159316465711971626
       vertices: []
       indices: 
       edges: []

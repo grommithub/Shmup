@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: New Shield Ability 1
   m_EditorClassIdentifier: 
   name_: Basic Shield
-  sprite_: {fileID: 21300000, guid: 85acc94f0724da94cb4e45f1ec3ca807, type: 3}
+  sprite_: {fileID: -1564420744098332049, guid: 1e029960f680f5f4e8f5771c4dc8fded,
+    type: 3}
   audioClip_: {fileID: 8300000, guid: ca0f1c9a9e8b52542904f1567a196002, type: 3}
   baseCooldown_: 16
   shieldDuration_: 5

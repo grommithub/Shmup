@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -277426985410066181, guid: e2607190332c67e4c9ff3471ffa19ff1,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42b01f78c6cbb4d49baf09f4d639893c, type: 3}
+    - target: {fileID: -277426985410066181, guid: e2607190332c67e4c9ff3471ffa19ff1,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4011619365300161248, guid: e2607190332c67e4c9ff3471ffa19ff1,
         type: 3}
       propertyPath: damage

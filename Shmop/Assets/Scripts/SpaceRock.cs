@@ -19,6 +19,6 @@ public class SpaceRock : EnemyBase
     {
         Move();
         transform.Rotate(new Vector3(0f, 0f, 1f) * _spinSpeed * Time.deltaTime, Space.World);
-        if (transform.position.x < -10) Destroy(gameObject);
+        if (transform.position.x < -10f) Destroy(gameObject);
     }
 }

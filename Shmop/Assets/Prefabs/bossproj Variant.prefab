@@ -27,6 +27,11 @@ PrefabInstance:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4011619365300161248, guid: e2607190332c67e4c9ff3471ffa19ff1,
+        type: 3}
+      propertyPath: startSound
+      value: 
+      objectReference: {fileID: 8300000, guid: eb1734c0ea492c24e982331c1c749300, type: 3}
     - target: {fileID: 4011619365300161251, guid: e2607190332c67e4c9ff3471ffa19ff1,
         type: 3}
       propertyPath: m_Name
@@ -112,5 +117,6 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.0039601903
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -277426985410066181, guid: e2607190332c67e4c9ff3471ffa19ff1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2607190332c67e4c9ff3471ffa19ff1, type: 3}

@@ -95,7 +95,9 @@ public class TutorialItem : MonoBehaviour
 
             Destroy(expl, 5f);
         }
+        SoundPlayer._soundPlayer.PlayExplosions(explosions, 0.05f);
         Destroy(gameObject);
+
 
     }
 

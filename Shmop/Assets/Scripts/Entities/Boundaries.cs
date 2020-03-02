@@ -15,13 +15,18 @@ public class Boundaries : MonoBehaviour
         player,
         enemy,
         bullet,
-        none
+        none,
+        asteroid
     }
 
 
     void Start()
     {
-        if(GetComponent<PlayerBehaviour>() != null)
+        if(GetComponent<SpaceRock>() != null)
+        {
+            mode = Mode.asteroid;
+        }
+        else if(GetComponent<PlayerBehaviour>() != null)
         {
             mode = Mode.player;
         }
@@ -67,6 +72,13 @@ public class Boundaries : MonoBehaviour
                     ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_ - 10f, ScreenBoundaries_.y - ObjectHeight_ + 10f);
                     if (transform.position != ViewPos_)
                         Destroy(gameObject);
+                }
+                break;
+            case Mode.asteroid:
+                {
+                    ViewPos_.x = transform.position.x;
+                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
+                    transform.position = ViewPos_;
                 }
                 break;
             default:

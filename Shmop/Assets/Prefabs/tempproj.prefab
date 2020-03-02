@@ -140,7 +140,7 @@ MonoBehaviour:
   _normalSprite: {fileID: 0}
   startSound: {fileID: 8300000, guid: 70e004daf061c7b43a4818574cfa9f67, type: 3}
   speed: 10
-  damage: 1
+  damage: 10
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
 --- !u!114 &-8779897787412900325

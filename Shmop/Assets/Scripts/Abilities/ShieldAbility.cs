@@ -13,7 +13,6 @@ public class ShieldAbility : Ability
     public override void Initialize(GameObject obj_in)
     {
         shield_ = obj_in.GetComponent<ShieldTrigger>(); //getting reference to trigger script
-
         shield_.shieldDuration_ = this.shieldDuration_; //assigning 
     }
 

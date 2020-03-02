@@ -8,7 +8,7 @@ public class ButtonHandler : MonoBehaviour
 {
     public void RestartGame()
     {
-        SceneManager.LoadScene("SampleScene 1");
+        SceneManager.LoadScene(1);
     }
 
     public void StartCredits()

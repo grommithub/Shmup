@@ -36,7 +36,10 @@ public class Hyperdrive : MonoBehaviour
         _centering = true;
     }
     private void Update()
-    {   
+    {
+
+        if (Input.GetKeyDown(KeyCode.G)) StartHyperDrive();
+
         if (!_hyperDriving) return;
 
         if (_centering)

@@ -11,6 +11,7 @@ public class EnemyBase : EntityBase
     protected override void Start()
     {
         _drop = GetComponent<DropItem>();
+        _weapon = GetComponent<Weapon>();
         base.Start();
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)

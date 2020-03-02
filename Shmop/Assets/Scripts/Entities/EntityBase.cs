@@ -64,7 +64,6 @@ public class EntityBase : MonoBehaviour
             rotation = Mathf.Sign(_rb.velocity.y) * _rotationAmount;
 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, rotation), _rotationSpeed * Time.deltaTime);
-
     }
 
     protected virtual void Die()
@@ -83,6 +82,8 @@ public class EntityBase : MonoBehaviour
             expl.GetComponent<AnimationDelay>().SetWaitTime(0.05f * i);
             expl.transform.localScale *= maxExplosionDistance;
         }
+
+        SoundPlayer._soundPlayer.PlayExplosions(explosions, 0.05f);
 
         Destroy(this.gameObject, 0.0f);
     }

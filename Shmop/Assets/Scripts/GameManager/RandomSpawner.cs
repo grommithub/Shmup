@@ -37,7 +37,7 @@ public class RandomSpawner : MonoBehaviour
         doneSpawning = false;
         for(int i = 0; i < _enemiesToSpawn; i++)
         {
-            float y = Random.Range(_minY + 5, _maxY - 5);
+            float y = Random.Range(_minY , _maxY);
             GameObject e = Instantiate(_spawnItem, new Vector3(_xPos, y, 0f), Quaternion.identity);
             if(_enemyParent != null) e.transform.SetParent(_enemyParent);
             yield return new WaitForSeconds(_interval);

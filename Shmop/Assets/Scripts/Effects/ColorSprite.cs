@@ -1,24 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColorSprite : MonoBehaviour
 {
+
     internal bool _hasOwnColour;
     [SerializeField] private Color _ownColour;
     private float _changeBackTime;
 
     private SpriteRenderer _sprite;
+    private Image _img;
     private ColorController _controller;
     private void Start()
     {
         _sprite = GetComponent<SpriteRenderer>();
         _controller = GameObject.FindObjectOfType<ColorController>();
 
+        if(_sprite == null)
+        _img = GetComponent<Image>();
+
         Update();
     }
     private void Update()
     {
+        if(_img != null)
+        {
+            if (_controller != null && !_hasOwnColour)
+            {
+                _img.color = _controller._currentColour;
+            }
+            else
+            {
+                _img.color = _ownColour;
+                if (Time.time > _changeBackTime) _hasOwnColour = false;
+            }
+            return;
+        }
+
         if(_sprite != null && _controller != null && !_hasOwnColour)
         {
             _sprite.color = _controller._currentColour;

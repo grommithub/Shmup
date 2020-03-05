@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehaviour : EntityBase
-{
+{ 
     Vector2 _inputVector = new Vector2();
     [SerializeField] internal Weapon _weapon;
 

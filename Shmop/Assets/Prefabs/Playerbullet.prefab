@@ -138,7 +138,7 @@ MonoBehaviour:
     type: 3}
   _normalSprite: {fileID: 0}
   speed: 15
-  damage: 1
+  damage: 10
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
 --- !u!114 &-8388893846175954211

@@ -553,6 +553,7 @@ MonoBehaviour:
   _bossIntro: {fileID: 8300000, guid: e7db863d6d9ffbd4f9995a7581f55418, type: 3}
   _bossLoop: {fileID: 8300000, guid: 06aaa47f28e42394787509be66754d0d, type: 3}
   _boom: {fileID: 8300000, guid: 33c2ffa94598a7142bc439c7af19e59b, type: 3}
+  _playerDamage: {fileID: 0}
 --- !u!224 &441989237 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5289171625353736740, guid: 163a29ceaf925724d8b0362471022ae1,
@@ -573,6 +574,14 @@ PrefabInstance:
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startCentering.m_PersistentCalls.m_Calls.Array.size
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startHyperDrive.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -737,6 +746,50 @@ PrefabInstance:
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startHyperDrive.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1932953554}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1932953554}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetHyperdriveValues
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetNormalValues
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
+      propertyPath: _miniHyperDriveTime
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 61364314, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: m_SortingOrder
@@ -1599,7 +1652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ship: {fileID: 1757977499}
-  waitTime: 15
+  waitTime: 7
 --- !u!4 &1492806399
 Transform:
   m_ObjectHideFlags: 0
@@ -1693,6 +1746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7f28ea7ce02da4ca0bc3c5b7bd080f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  desired_speed_: 0
+  default_speed_: 0.3
   bg_speed_: 0.3
   bg_renderer_: {fileID: 1932953555}
   hyper_drived_speed_: 1.5
@@ -2046,6 +2101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ecb10f8c5ce7ed40b78b484b8dae7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startMiniHyperDrive:
+    m_PersistentCalls:
+      m_Calls: []
+  _stopMiniHyperDrive:
+    m_PersistentCalls:
+      m_Calls: []
+  _miniHyperDriveTime: 3
   _startHyperDrive:
     m_PersistentCalls:
       m_Calls: []

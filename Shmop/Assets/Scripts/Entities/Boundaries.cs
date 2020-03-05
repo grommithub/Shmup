@@ -15,18 +15,13 @@ public class Boundaries : MonoBehaviour
         player,
         enemy,
         bullet,
-        none,
-        asteroid
+        none
     }
 
 
     void Start()
     {
-        if(GetComponent<SpaceRock>() != null)
-        {
-            mode = Mode.asteroid;
-        }
-        else if(GetComponent<PlayerBehaviour>() != null)
+        if(GetComponent<PlayerBehaviour>() != null)
         {
             mode = Mode.player;
         }
@@ -38,7 +33,6 @@ public class Boundaries : MonoBehaviour
         {
             mode = Mode.bullet;
         }
-
 
         ScreenBoundaries_ = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         ObjectWidth_ = transform.GetComponent<SpriteRenderer>().bounds.size.x / 4;
@@ -61,7 +55,7 @@ public class Boundaries : MonoBehaviour
                 break;
             case Mode.enemy:
                 {
-                    ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, ScreenBoundaries_.x  * 1.5f);
+                    ViewPos_.x = transform.position.x;
                     ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
                     transform.position = ViewPos_;
                 }
@@ -72,13 +66,6 @@ public class Boundaries : MonoBehaviour
                     ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_ - 10f, ScreenBoundaries_.y - ObjectHeight_ + 10f);
                     if (transform.position != ViewPos_)
                         Destroy(gameObject);
-                }
-                break;
-            case Mode.asteroid:
-                {
-                    ViewPos_.x = transform.position.x;
-                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
-                    transform.position = ViewPos_;
                 }
                 break;
             default:

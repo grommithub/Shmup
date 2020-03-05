@@ -12,6 +12,7 @@ public class HavocTrigger : MonoBehaviour
     private int finalDamage_; //argument that would be passed to the target projectile prefab at the end
     private Rigidbody2D rb2D_; //component reference
     private ProjectileBase projectileBase_;
+    private PlayerBehaviour playerBehaviour_;
 
 
     //the variables which get their values from corresponding ones in Ability script
@@ -19,7 +20,7 @@ public class HavocTrigger : MonoBehaviour
     [HideInInspector] public float recoilForce_;
     [HideInInspector] public float shakeForce_;
     [HideInInspector] public int damageMultiplier_;
-    [HideInInspector] public GameObject projectile_;
+    public GameObject projectile_;
 
     //Activates the script and also launches countdown for its deactivation. Only called externally
     public void DevilTrigger()
@@ -36,7 +37,7 @@ public class HavocTrigger : MonoBehaviour
     {
         yield return new WaitForSeconds(havocDuration_);
         enabled = false;
-        projectileBase_.damage = originDamage_;
+        projectileBase_.damage = finalDamage_ / damageMultiplier_;
     }
 
     private void Shake()
@@ -62,6 +63,7 @@ public class HavocTrigger : MonoBehaviour
         rb2D_ = GetComponent<Rigidbody2D>();
         projectileBase_ = projectile_.GetComponent<ProjectileBase>();
         originDamage_ = projectileBase_.damage;
+        playerBehaviour_ = GetComponent<PlayerBehaviour>();
     }
 
 
@@ -69,17 +71,20 @@ public class HavocTrigger : MonoBehaviour
     {
         isShooting_ = Input.GetButton(PlayerInput.shootButton);
 
-        if (isShaking_)
-        {
-            Shake();
-        }
+        //if (isShaking_)
+        //{
+        //    Shake();
+        //}
+        Shake();
+        playerBehaviour_.ShootRapidly();
     }
 
     private void FixedUpdate()
     {
-        if (isShooting_)
-        {
-            GitBacked();
-        }
+        //if (isShooting_)
+        //{
+        //    GitBacked();
+        //}
+        GitBacked();
     }
 }

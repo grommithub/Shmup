@@ -457,7 +457,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61364306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecd09cca99ed5e541b5784f5e109f69b, type: 3}
   m_Name: 
@@ -466,6 +466,8 @@ MonoBehaviour:
   recoilForce_: 0
   shakeForce_: 0
   damageMultiplier_: 0
+  projectile_: {fileID: 4011619365300161251, guid: e30b15ccf8059a443acbf2e7c3dd4340,
+    type: 3}
 --- !u!1 &81035887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,7 +2691,7 @@ PrefabInstance:
         type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 4011619365300161251, guid: e2607190332c67e4c9ff3471ffa19ff1,
+      objectReference: {fileID: 4011619365300161251, guid: e30b15ccf8059a443acbf2e7c3dd4340,
         type: 3}
     - target: {fileID: 3331725737357122315, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}

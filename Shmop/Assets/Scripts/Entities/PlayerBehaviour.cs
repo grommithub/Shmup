@@ -36,6 +36,16 @@ public class PlayerBehaviour : EntityBase
 
         }
     }
+
+    public void ShootRapidly()
+    {
+        if(Time.time > _lastShot + _weapon._shootSpeed)
+        {
+            _weapon.Shoot(_bulletStart.position, transform.rotation, false, true);
+            _lastShot = Time.time;
+        }
+    }
+
     public void GiveHealth(int healthBonus)
     {
         _health += healthBonus;

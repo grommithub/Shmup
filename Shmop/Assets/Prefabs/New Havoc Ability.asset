@@ -15,10 +15,10 @@ MonoBehaviour:
   name_: Havoc
   sprite_: {fileID: 21300000, guid: f903d9b59c878294589e2e21239f734f, type: 3}
   audioClip_: {fileID: 8300000, guid: ca0f1c9a9e8b52542904f1567a196002, type: 3}
-  baseCooldown_: 20
-  havocDuration_: 10
+  baseCooldown_: 15
+  havocDuration_: 5
   recoilForce_: 5
-  shakeForce_: 15
+  shakeForce_: 20
   damageMultiplier_: 3
-  projectile_: {fileID: 4011619365300161251, guid: e2607190332c67e4c9ff3471ffa19ff1,
+  projectile_: {fileID: 4011619365300161251, guid: e30b15ccf8059a443acbf2e7c3dd4340,
     type: 3}

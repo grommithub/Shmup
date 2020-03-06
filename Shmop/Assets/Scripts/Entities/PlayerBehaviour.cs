@@ -51,7 +51,7 @@ public class PlayerBehaviour : EntityBase
         _health += healthBonus;
         _health = Mathf.Min(_health, _maxHealth);
 
-        _colourController.SetTemporaryColor(Color.green, 0.1f * healthBonus);
+        _colourController.SetTemporaryColor(Color.green, 0.5f);
     }
 
     protected override void Die()

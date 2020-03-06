@@ -54,7 +54,7 @@ public class RaycastTrigger : MonoBehaviour
         beam_.transform.SetParent(parent_.transform);
         lr_ = beam_.GetComponent<LineRenderer>();
 
-        PlayerInput.shootButton = "";
+        PlayerInput.shootButton = string.Empty;
 
         StartCoroutine(StartCountdown());
 

@@ -17,4 +17,4 @@ MonoBehaviour:
   audioClip_: {fileID: 8300000, guid: ca0f1c9a9e8b52542904f1567a196002, type: 3}
   baseCooldown_: 13
   laserDuration_: 5
-  laserDamage_: 2
+  laserDamage_: 1

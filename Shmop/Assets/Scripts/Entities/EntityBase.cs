@@ -19,7 +19,7 @@ public class EntityBase : MonoBehaviour
     [SerializeField] private float maxExplosionDistance;
 
     [SerializeField] private float _rotationSpeed, _rotationAmount;
-    protected Vector2 _movementVector;
+    protected Vector2 _movementVector; 
 
     protected virtual void Start()
     {

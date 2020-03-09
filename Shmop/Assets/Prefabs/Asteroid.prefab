@@ -100,19 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 50
   _health: 0
-  _speed: 5
+  _speed: 1
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
   explosions: 5
   maxExplosionDistance: 1
   _rotationSpeed: 0
   _rotationAmount: 0
-  _onCollideDamage: 10000
+  _onCollideDamage: 1
   _weapon: {fileID: 0}
   _drop: {fileID: 0}
   _deviation: 0
   _maxDeviation: 30
-  _spinSpeed: 5
+  _spinSpeed: 4
 --- !u!50 &8319903020353679555
 Rigidbody2D:
   serializedVersion: 4

@@ -10,9 +10,10 @@ public class ProjectileBase : MonoBehaviour
     [SerializeField] private Sprite _muzzleFlash, _normalSprite;
     private SpriteRenderer _spriteRenderer;
 
-    [SerializeField] private float speed;
-    [SerializeField] internal int originalDamage;
-    internal int damage;
+    [SerializeField] private AudioClip startSound;
+
+    [SerializeField] protected float speed;
+    [SerializeField] internal int damage;
     internal bool isEnemy;
     internal bool goingRight;
     private float directionMultiplier = 1;
@@ -23,10 +24,6 @@ public class ProjectileBase : MonoBehaviour
     [SerializeField] protected GameObject explosion;
     protected virtual void Start()
     {
-        damage = originalDamage;
-
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _normalSprite = _spriteRenderer.sprite;
 
 
         if(startSound != null) SoundPlayer.PlayOneShot(startSound);

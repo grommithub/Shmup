@@ -381,8 +381,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.2, y: 1.5}
-  m_SizeDelta: {x: 138.4, y: 33.1}
+  m_AnchoredPosition: {x: 5.675, y: 1.5}
+  m_SizeDelta: {x: 125.35, y: 33.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &960039018
 MonoBehaviour:
@@ -404,8 +404,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EXIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c3526195650055146b05b86ac0401c01, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: c3526195650055146b05b86ac0401c01,
+  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -603,8 +603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34, y: -7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 4.85, y: -0.6}
+  m_SizeDelta: {x: 141.7, y: 37.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188737673
 MonoBehaviour:
@@ -626,8 +626,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MENU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c3526195650055146b05b86ac0401c01, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: c3526195650055146b05b86ac0401c01,
+  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -991,8 +991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: -8}
-  m_SizeDelta: {x: 319.9, y: 50}
+  m_AnchoredPosition: {x: 4, y: -1.73}
+  m_SizeDelta: {x: 319.9, y: 37.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742457752
 MonoBehaviour:
@@ -1014,8 +1014,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAY AGAIN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c3526195650055146b05b86ac0401c01, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: c3526195650055146b05b86ac0401c01,
+  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1344,8 +1344,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: We won. Congrats soldier.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c3526195650055146b05b86ac0401c01, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: c3526195650055146b05b86ac0401c01,
+  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

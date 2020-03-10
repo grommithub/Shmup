@@ -62,6 +62,72 @@ TextureImporter:
   - first:
       213: -1752893694762273907
     second: Laser animation-Sheet_19
+  - first:
+      213: -2470418022280981384
+    second: Laser preparation spritesheet_0
+  - first:
+      213: 3060608120058200093
+    second: Laser preparation spritesheet_1
+  - first:
+      213: 7727193772423030641
+    second: Laser preparation spritesheet_2
+  - first:
+      213: -459073856373375015
+    second: Laser preparation spritesheet_3
+  - first:
+      213: -2314461066355395629
+    second: Laser preparation spritesheet_4
+  - first:
+      213: -2660303652511007669
+    second: Laser preparation spritesheet_5
+  - first:
+      213: -7613498867163885455
+    second: Laser preparation spritesheet_6
+  - first:
+      213: 5790575399877719823
+    second: Laser preparation spritesheet_7
+  - first:
+      213: 5336027445685149104
+    second: Laser preparation spritesheet_8
+  - first:
+      213: -3212068938798538315
+    second: Laser preparation spritesheet_9
+  - first:
+      213: -7038996719034205671
+    second: Laser preparation spritesheet_10
+  - first:
+      213: 4836942103304031841
+    second: Laser preparation spritesheet_11
+  - first:
+      213: -7363438347857871512
+    second: Laser preparation spritesheet_12
+  - first:
+      213: 5895909632216256063
+    second: Laser preparation spritesheet_13
+  - first:
+      213: 5232261730346523482
+    second: Laser preparation spritesheet_14
+  - first:
+      213: -6300865830135122036
+    second: Laser preparation spritesheet_15
+  - first:
+      213: -179983693708074468
+    second: Laser preparation spritesheet_16
+  - first:
+      213: -3620834477443398095
+    second: Laser preparation spritesheet_17
+  - first:
+      213: -5827389407601256941
+    second: Laser preparation spritesheet_18
+  - first:
+      213: 3996694424960563839
+    second: Laser preparation spritesheet_19
+  - first:
+      213: 6053288487903477560
+    second: Laser preparation spritesheet_20
+  - first:
+      213: 7975340009587169633
+    second: Laser preparation spritesheet_21
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -166,17 +232,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Laser animation-Sheet_0
+      name: Laser preparation spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 300
-        height: 64
+        x: 81
+        y: 222
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e68726146622fcd0800000000000000
-      internalID: -2525914229691152670
+      spriteID: 8741837c5ef47bdd0800000000000000
+      internalID: -2470418022280981384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laser animation-Sheet_1
+      name: Laser preparation spritesheet_1
       rect:
         serializedVersion: 2
-        x: 300
-        y: 192
-        width: 300
-        height: 64
+        x: 380
+        y: 220
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c3d16bf152ef8760800000000000000
-      internalID: 7462431949313921985
+      spriteID: d10ceb09ed6797a20800000000000000
+      internalID: 3060608120058200093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laser animation-Sheet_2
+      name: Laser preparation spritesheet_2
       rect:
         serializedVersion: 2
-        x: 600
-        y: 192
-        width: 300
-        height: 64
+        x: 678
+        y: 219
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +304,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 235965f69eea51fe0800000000000000
-      internalID: -1218875806515292878
+      spriteID: 177a2ebabc18c3b60800000000000000
+      internalID: 7727193772423030641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laser animation-Sheet_3
+      name: Laser preparation spritesheet_4
       rect:
         serializedVersion: 2
-        x: 900
-        y: 192
-        width: 300
-        height: 64
+        x: 1275
+        y: 215
+        width: 20
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +325,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9ebc0afe66bf8070800000000000000
-      internalID: 8110902041675349663
+      spriteID: 3d33a653ce161efd0800000000000000
+      internalID: -2314461066355395629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laser animation-Sheet_4
+      name: Laser preparation spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 192
-        width: 300
-        height: 64
+        x: 73
+        y: 146
+        width: 24
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +346,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 248be0b9c45fd4ba0800000000000000
-      internalID: -6102952210649401278
+      spriteID: b4c38654ce3b41bd0800000000000000
+      internalID: -2660303652511007669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laser animation-Sheet_5
+      name: Laser preparation spritesheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 300
-        height: 64
+        x: 371
+        y: 144
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,29 +367,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1880096c5af518470800000000000000
-      internalID: 8395096346000885889
+      spriteID: 1709bdc4e1b675690800000000000000
+      internalID: -7613498867163885455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laser animation-Sheet_6
+      name: Laser preparation spritesheet_20
       rect:
         serializedVersion: 2
-        x: 300
-        y: 128
-        width: 300
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 124
+        y: 79
+        width: 53
+        height: 37
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d51da1856bffe210800000000000000
-      internalID: 1364585625502422487
+      spriteID: 83fb27cdec9910450800000000000000
+      internalID: 6053288487903477560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser preparation spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 18
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df323982ca01a9f0800000000000000
+      internalID: -459073856373375015
       vertices: []
       indices: 
       edges: []

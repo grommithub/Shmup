@@ -11,7 +11,8 @@ public class ProjectileBase : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
 
     [SerializeField] private float speed;
-    [SerializeField] internal int damage;
+    [SerializeField] internal int originalDamage;
+    internal int damage;
     internal bool isEnemy;
     internal bool goingRight;
     private float directionMultiplier = 1;
@@ -22,6 +23,8 @@ public class ProjectileBase : MonoBehaviour
     [SerializeField] private GameObject explosion;
     private void Start()
     {
+        damage = originalDamage;
+
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _normalSprite = _spriteRenderer.sprite;
 

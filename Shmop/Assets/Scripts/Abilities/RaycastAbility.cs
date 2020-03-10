@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//responsible for the script: Ivan
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

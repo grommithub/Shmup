@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//responsible for the script: Ivan
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,22 +15,10 @@ public class RaycastTrigger : MonoBehaviour
     [HideInInspector] public float laserDuration_;
     [HideInInspector] public int laserDamage_;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        //beam_ = Instantiate(laser_);
-        //beam_.transform.SetParent(parent_.transform);
-        //lr_ = beam_.GetComponent<LineRenderer>();
-
-        //StartCoroutine(StartCountdown());
-    }
-
     // Update is called once per frame
     private void Update()
     {
-        //beam_.transform.position = this.transform.position;
         lr_.SetPosition(0, this.transform.position);
-        //lr_.SetPosition(1, this.transform.right * 500);
         RaycastHit2D hit_;
         hit_ = Physics2D.Raycast(transform.position, transform.right);
         if (hit_.collider)
@@ -54,7 +43,7 @@ public class RaycastTrigger : MonoBehaviour
         beam_.transform.SetParent(parent_.transform);
         lr_ = beam_.GetComponent<LineRenderer>();
 
-        PlayerInput.shootButton = "";
+        PlayerInput.shootButton = string.Empty;
 
         StartCoroutine(StartCountdown());
 

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: New Raycast Ability
   m_EditorClassIdentifier: 
   name_: Laser
-  sprite_: {fileID: 21300000, guid: 4bd322e0c18f8fd4684033b119fc358a, type: 3}
+  sprite_: {fileID: 21300000, guid: f903d9b59c878294589e2e21239f734f, type: 3}
   audioClip_: {fileID: 8300000, guid: ca0f1c9a9e8b52542904f1567a196002, type: 3}
-  baseCooldown_: 10
-  laserDuration_: 8
+  baseCooldown_: 13
+  laserDuration_: 5
   laserDamage_: 1

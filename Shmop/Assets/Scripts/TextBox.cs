@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
+//Kill me
+
 public class TextBox : MonoBehaviour
 {
     [SerializeField] private GameObject button_;

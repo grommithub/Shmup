@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cea5bf836d0b174b8d7850f7fb33e41, type: 3}
-  m_Name: New Shield Ability 1
+  m_Name: Shield
   m_EditorClassIdentifier: 
   name_: Basic Shield
   sprite_: {fileID: -1564420744098332049, guid: 1e029960f680f5f4e8f5771c4dc8fded,

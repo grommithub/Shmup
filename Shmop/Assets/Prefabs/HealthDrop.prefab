@@ -178,3 +178,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthAmount: 3
+  pickupClip: {fileID: 8300000, guid: 8e8251d784d0c374a989eec4ff6d1f72, type: 3}

@@ -54,6 +54,7 @@ public class PlayerBehaviour : EntityBase
     {
         base.TakeDamage(incomingDamage);
         _colourController.SetTemporaryColor(Color.red, 0.1f);
+        SoundPlayer._soundPlayer.PlayerDamge();
     }
 
     protected override void Move()

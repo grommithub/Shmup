@@ -48,6 +48,8 @@ public class HomingRocket : ProjectileBase
             expl.transform.localScale = new Vector3(s, s, 1f);
             expl.GetComponent<AnimationDelay>().SetWaitTime(0.15f * i);
         }
+        SoundPlayer._soundPlayer.PlayExplosions(explosions, 0.15f);
+
         Destroy(gameObject);
     }
 }

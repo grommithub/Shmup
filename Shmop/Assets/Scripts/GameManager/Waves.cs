@@ -34,11 +34,12 @@ public class Waves : MonoBehaviour
             {
                 if(_waiting && Time.time > _nextSpawn)
                 {
+                    _hyperdrive.StartCoroutine(_hyperdrive.MiniHyperDrive());
                     _nextSpawn = Time.time + _pauseTime;
                     _waiting = false;
 
                 }
-                if(Time.time > _nextSpawn && !_waiting)
+                if(Time.time > _nextSpawn + _hyperdrive._miniHyperDriveTime && !_waiting)
                 {
                     _spawning = SpawnWave(_waveNum);
                     _waveNum++;
@@ -60,7 +61,6 @@ public class Waves : MonoBehaviour
             FindObjectOfType<Hyperdrive>().StartHyperDrive();
             return false;
         }
-        print("spawn");
         Wave w = _waves[index];
         _spawner.SpawnWave(w.enemy, w.amount, w.interval);
         return true;

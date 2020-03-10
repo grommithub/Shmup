@@ -34,7 +34,6 @@ public class Boundaries : MonoBehaviour
             mode = Mode.bullet;
         }
 
-
         ScreenBoundaries_ = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         ObjectWidth_ = transform.GetComponent<SpriteRenderer>().bounds.size.x / 4;
         ObjectHeight_ = transform.GetComponent<SpriteRenderer>().bounds.size.y / 4;
@@ -56,7 +55,7 @@ public class Boundaries : MonoBehaviour
                 break;
             case Mode.enemy:
                 {
-                    ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, ScreenBoundaries_.x  * 1.5f);
+                    ViewPos_.x = transform.position.x;
                     ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
                     transform.position = ViewPos_;
                 }

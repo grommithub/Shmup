@@ -14,10 +14,11 @@ GameObject:
   - component: {fileID: 8319903020353679555}
   - component: {fileID: 8319903020353679552}
   - component: {fileID: 8319903020353679554}
-  - component: {fileID: 4241452841599849984}
+  - component: {fileID: 8319903020353679557}
+  - component: {fileID: -286239839731520901}
   m_Layer: 0
   m_Name: Asteroid
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f5ce42235daf046a4ea26ab0222d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 10
+  _maxHealth: 5
   _health: 0
   _speed: 2
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
@@ -234,6 +235,19 @@ MonoBehaviour:
     firstIndex: 0
     lastIndex: 0
 --- !u!114 &4241452841599849984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319903020353679580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0e042b438a3084c9ef2d41668399cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ownColour: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-286239839731520901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -25,6 +25,7 @@ public class EnemyBase : EntityBase
 
     public override void TakeDamage(int incomingDamage)
     {
+        SoundPlayer.PlayOneShot(SoundPlayer._soundPlayer.enemyHurt);
         base.TakeDamage(incomingDamage);
         if(_colourSprite != null)
         {

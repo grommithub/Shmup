@@ -8,7 +8,7 @@ public class SoundPlayer : MonoBehaviour
     private static AudioSource _audioSource;
     public static SoundPlayer _soundPlayer;
 
-    [SerializeField] public AudioClip _bossIntro, _bossLoop, _boom, _playerDamage;
+    [SerializeField] public AudioClip _bossIntro, _bossLoop, _boom, _playerDamage, enemyHurt;
 
     [SerializeField] private static float explosionFrequency = 0.1f;
     

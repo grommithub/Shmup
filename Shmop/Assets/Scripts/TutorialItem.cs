@@ -39,22 +39,27 @@ public class TutorialItem : MonoBehaviour
         keyDown.AddListener(Click);
         keyUp.AddListener(UnClick);
 
-        switch(key)
+
+       switch(key)
         {
             case Key.left:
-                button = KeyCode.LeftArrow;
+                button = KeyCode.A;
+                //button = KeyCode.LeftArrow;
                 _direction = Vector2.left;
                 break;
             case Key.right:
-                button = KeyCode.RightArrow;
+                //button = KeyCode.RightArrow;
+                button = KeyCode.D;
                 _direction = Vector2.right;
                 break;
             case Key.down:
-                button = KeyCode.DownArrow;
+                button = KeyCode.S;
+                //button = KeyCode.DownArrow;
                 _direction = Vector2.down;
                 break;
             case Key.up:
-                button = KeyCode.UpArrow;
+                button = KeyCode.W;
+                //button = KeyCode.UpArrow;
                 _direction = Vector2.up;
                 break;
             case Key.shoot:

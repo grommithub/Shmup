@@ -1162,7 +1162,7 @@ PrefabInstance:
     - target: {fileID: 5289171625353736740, guid: 163a29ceaf925724d8b0362471022ae1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -150
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 5289171625353736740, guid: 163a29ceaf925724d8b0362471022ae1,
         type: 3}
@@ -2675,11 +2675,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 974860440796669929, guid: 54ba7f94e8f42964486b25888b456b2b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 974860440796669930, guid: 54ba7f94e8f42964486b25888b456b2b,
         type: 3}
       propertyPath: player_
       value: 
       objectReference: {fileID: 61364306}
+    - target: {fileID: 974860440796669930, guid: 54ba7f94e8f42964486b25888b456b2b,
+        type: 3}
+      propertyPath: activationKey_
+      value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963406552374971997, guid: 54ba7f94e8f42964486b25888b456b2b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -150
+      objectReference: {fileID: 0}
     - target: {fileID: 4963406552374971998, guid: 54ba7f94e8f42964486b25888b456b2b,
         type: 3}
       propertyPath: player_

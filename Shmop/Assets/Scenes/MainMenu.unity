@@ -437,7 +437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53c915a4afcbec640b7ebf9dd454ebf5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44cd2101670fd884e9581342451fdb06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textHolder_: {fileID: 1857064922}
+  text_: {fileID: 0}
 --- !u!1 &173969445
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,16 +639,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: VOLUTE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
+  m_fontAsset: {fileID: 11400000, guid: 324f66475afa78249a67e21601fc4992, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: 324f66475afa78249a67e21601fc4992,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -993,7 +994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1bf5cc874bd682e4a9899b535987ccca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44cd2101670fd884e9581342451fdb06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1368,16 +1369,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: OPTIONS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
+  m_fontAsset: {fileID: 11400000, guid: 324f66475afa78249a67e21601fc4992, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: 324f66475afa78249a67e21601fc4992,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1734,7 +1735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53c915a4afcbec640b7ebf9dd454ebf5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44cd2101670fd884e9581342451fdb06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1765,6 +1766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textHolder_: {fileID: 1180030142}
+  text_: {fileID: 0}
 --- !u!1 &1162870688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,16 +1825,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
+  m_fontAsset: {fileID: 11400000, guid: 324f66475afa78249a67e21601fc4992, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: 324f66475afa78249a67e21601fc4992,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2135,16 +2137,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: QUIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
+  m_fontAsset: {fileID: 11400000, guid: 324f66475afa78249a67e21601fc4992, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: 324f66475afa78249a67e21601fc4992,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2710,7 +2712,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53c915a4afcbec640b7ebf9dd454ebf5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44cd2101670fd884e9581342451fdb06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2741,6 +2743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textHolder_: {fileID: 710017789}
+  text_: {fileID: 0}
 --- !u!1 &1698237366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,16 +3064,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a5f9f1d94c3eed14faf9bc78f2bb1792, type: 2}
-  m_sharedMaterial: {fileID: -5606963059285512881, guid: a5f9f1d94c3eed14faf9bc78f2bb1792,
+  m_fontAsset: {fileID: 11400000, guid: 324f66475afa78249a67e21601fc4992, type: 2}
+  m_sharedMaterial: {fileID: -5606963059285512881, guid: 324f66475afa78249a67e21601fc4992,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3273,7 +3276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53c915a4afcbec640b7ebf9dd454ebf5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44cd2101670fd884e9581342451fdb06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3304,3 +3307,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textHolder_: {fileID: 1162870688}
+  text_: {fileID: 0}

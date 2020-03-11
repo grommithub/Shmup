@@ -1,5 +1,4 @@
-﻿//responsible for the script: Ivan
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,10 +14,9 @@ public class RaycastAbility : Ability
 
     public override void Initialize(GameObject obj_)
     {
-        raycast_ = obj_.GetComponent<RaycastTrigger>();
+        raycast_ = FindObjectOfType<RaycastTrigger>();
 
-        raycast_.laserDuration_ = this.laserDuration_;
-        raycast_.laserDamage_ = this.laserDamage_;
+        raycast_._duration = this.laserDuration_;
     }
 
     public override void TriggerAbility()

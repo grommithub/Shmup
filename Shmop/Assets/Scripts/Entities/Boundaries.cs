@@ -12,7 +12,8 @@ public class Boundaries : MonoBehaviour
 
     [SerializeField] private enum Mode
     {
-        entity,
+        player,
+        enemy,
         bullet,
         none
     }
@@ -20,9 +21,13 @@ public class Boundaries : MonoBehaviour
 
     void Start()
     {
-        if(GetComponent<EntityBase>() != null)
+        if(GetComponent<PlayerBehaviour>() != null)
         {
-            mode = Mode.entity;
+            mode = Mode.player;
+        }
+        else if(GetComponent<EnemyBase>() != null)
+        {
+            mode = Mode.enemy;
         }
         else if (GetComponent<ProjectileBase>() != null)
         {
@@ -41,17 +46,24 @@ public class Boundaries : MonoBehaviour
 
         switch(mode)
         {
-            case Mode.entity:
+            case Mode.player:
                 {
                     ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, ScreenBoundaries_.x - ObjectWidth_);
                     ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
                     transform.position = ViewPos_;
                 }
                 break;
+            case Mode.enemy:
+                {
+                    ViewPos_.x = transform.position.x;
+                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
+                    transform.position = ViewPos_;
+                }
+                break;
             case Mode.bullet:
                 {
-                    ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_, (ScreenBoundaries_.x * 1.5f) - ObjectWidth_);
-                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_, ScreenBoundaries_.y - ObjectHeight_);
+                    ViewPos_.x = Mathf.Clamp(ViewPos_.x, -ScreenBoundaries_.x + ObjectWidth_ - 15f, (ScreenBoundaries_.x * 1.5f) - ObjectWidth_);
+                    ViewPos_.y = Mathf.Clamp(ViewPos_.y, -ScreenBoundaries_.y + ObjectHeight_ - 10f, ScreenBoundaries_.y - ObjectHeight_ + 10f);
                     if (transform.position != ViewPos_)
                         Destroy(gameObject);
                 }

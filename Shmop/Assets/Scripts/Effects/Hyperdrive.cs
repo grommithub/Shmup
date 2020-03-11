@@ -5,6 +5,14 @@ using UnityEngine.Events;
 
 public class Hyperdrive : MonoBehaviour
 {
+
+
+
+    public UnityEvent _startMiniHyperDrive;
+    public UnityEvent _stopMiniHyperDrive;
+
+    [SerializeField] internal float _miniHyperDriveTime = 3f;
+
     [SerializeField] private UnityEvent _startHyperDrive;
     [SerializeField] private UnityEvent _startCentering;
     
@@ -36,7 +44,10 @@ public class Hyperdrive : MonoBehaviour
         _centering = true;
     }
     private void Update()
-    {   
+    {
+
+        if (Input.GetKeyDown(KeyCode.G)) StartCoroutine(MiniHyperDrive());
+
         if (!_hyperDriving) return;
 
         if (_centering)
@@ -58,5 +69,14 @@ public class Hyperdrive : MonoBehaviour
             transform.localScale = new Vector3(_stretch, 1f, 1f);
         }
         transform.rotation = Quaternion.identity;
+    }
+
+    public IEnumerator MiniHyperDrive()
+    {
+        yield return new WaitForSeconds(_miniHyperDriveTime / 2);
+        _startMiniHyperDrive.Invoke();
+        yield return new WaitForSeconds(_miniHyperDriveTime / 2);
+        _stopMiniHyperDrive.Invoke();
+        yield return null;
     }
 }

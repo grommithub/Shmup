@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehaviour : EntityBase
-{ 
+{
     Vector2 _inputVector = new Vector2();
     [SerializeField] internal Weapon _weapon;
 
@@ -39,7 +39,7 @@ public class PlayerBehaviour : EntityBase
 
     public void ShootRapidly()
     {
-        if(Time.time > _lastShot + _weapon._shootSpeed)
+        if (Time.time > _lastShot + _weapon._shootSpeed)
         {
             _weapon.Shoot(_bulletStart.position, transform.rotation, false, true);
             _lastShot = Time.time;
@@ -51,7 +51,7 @@ public class PlayerBehaviour : EntityBase
         _health += healthBonus;
         _health = Mathf.Min(_health, _maxHealth);
 
-        _colourController.SetTemporaryColor(Color.green, 0.5f);
+        _colourController.SetTemporaryColor(Color.green, 0.1f * healthBonus);
     }
 
     protected override void Die()
@@ -64,6 +64,7 @@ public class PlayerBehaviour : EntityBase
     {
         base.TakeDamage(incomingDamage);
         _colourController.SetTemporaryColor(Color.red, 0.1f);
+        SoundPlayer._soundPlayer.PlayerDamge();
     }
 
     protected override void Move()

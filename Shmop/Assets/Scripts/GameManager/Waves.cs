@@ -11,12 +11,15 @@ public class Waves : MonoBehaviour
     private bool _spawning = true;
     private bool _waiting;
 
+    private Hyperdrive _hyperdrive;
+
     [SerializeField] private float _pauseTime;
     private float _nextSpawn;
     private void Start()
     {
         _nextSpawn = _pauseTime + Time.time;
         _spawner = GetComponent<RandomSpawner>();
+        _hyperdrive = FindObjectOfType<Hyperdrive>();
     }
 
     private void Update()
@@ -31,11 +34,12 @@ public class Waves : MonoBehaviour
             {
                 if(_waiting && Time.time > _nextSpawn)
                 {
+                    _hyperdrive.StartCoroutine(_hyperdrive.MiniHyperDrive());
                     _nextSpawn = Time.time + _pauseTime;
                     _waiting = false;
 
                 }
-                if(Time.time > _nextSpawn && !_waiting)
+                if(Time.time > _nextSpawn + _hyperdrive._miniHyperDriveTime && !_waiting)
                 {
                     _spawning = SpawnWave(_waveNum);
                     _waveNum++;
@@ -54,10 +58,9 @@ public class Waves : MonoBehaviour
         if(index > _waves.Count - 1)
         {
             print("All waves spawned");
-            GameObject.FindObjectOfType<Hyperdrive>().StartHyperDrive();
+            FindObjectOfType<Hyperdrive>().StartHyperDrive();
             return false;
         }
-        print("spawn");
         Wave w = _waves[index];
         _spawner.SpawnWave(w.enemy, w.amount, w.interval);
         return true;

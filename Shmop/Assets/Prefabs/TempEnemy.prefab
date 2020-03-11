@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 3010130404623204392}
   - component: {fileID: 3010130404623204393}
   - component: {fileID: 987730608}
+  - component: {fileID: 7428601115241923127}
   m_Layer: 0
   m_Name: TempEnemy
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a782e3da8cb3743be3dcdaa990c30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 50
+  _maxHealth: 2
   _health: 2
   _speed: 1
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
@@ -208,3 +209,15 @@ MonoBehaviour:
     drop: {fileID: 7307028008448342235, guid: 6cd3d90853f133543890ef1b36c2c021, type: 3}
     firstIndex: 0
     lastIndex: 0
+--- !u!114 &7428601115241923127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3010130404623205330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0e042b438a3084c9ef2d41668399cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

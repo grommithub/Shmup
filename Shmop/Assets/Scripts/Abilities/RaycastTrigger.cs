@@ -58,8 +58,12 @@ public class RaycastTrigger : MonoBehaviour
                         SetLength(hit.point);
                         _enemyHit = enemy;
                         lastHit = Time.time;
-                        SpawnExplosion();
                         _enemyHit.TakeDamage(1);
+                    }
+                    for(int i = 0; i < 2; i++)
+                    {
+                        SpawnExplosion();
+
                     }
                 }
 

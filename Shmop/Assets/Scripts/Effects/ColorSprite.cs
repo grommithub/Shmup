@@ -7,13 +7,13 @@ public class ColorSprite : MonoBehaviour
 {
 
     internal bool _hasOwnColour;
-    [SerializeField] private Color _ownColour;
-    private float _changeBackTime;
+    [SerializeField] protected Color _ownColour;
+    protected float _changeBackTime;
 
     private SpriteRenderer _sprite;
     private Image _img;
-    private ColorController _controller;
-    private void Start()
+    protected ColorController _controller;
+    protected virtual void Start()
     {
         _sprite = GetComponent<SpriteRenderer>();
         _controller = GameObject.FindObjectOfType<ColorController>();
@@ -23,7 +23,7 @@ public class ColorSprite : MonoBehaviour
 
         Update();
     }
-    private void Update()
+    protected virtual void Update()
     {
         if(_img != null)
         {
@@ -50,7 +50,7 @@ public class ColorSprite : MonoBehaviour
         }
     }
 
-    public void ChangeColour(Color colour, float duration)
+    public virtual void ChangeColour(Color colour, float duration)
     {
         _hasOwnColour = true;
         _ownColour = colour;

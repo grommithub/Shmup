@@ -39,7 +39,7 @@ public class EnemyBase : EntityBase
         {
             _drop.GetRandomDrop();
         }
-        else print("thing doesn't exist");
+        else print("no drops for you");
 
         base.Die();
     }

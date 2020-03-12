@@ -16,7 +16,7 @@ public class ProjectileBase : MonoBehaviour
     [SerializeField] internal int damage;
     internal bool isEnemy;
     internal bool goingRight;
-    private float directionMultiplier = 1;
+    protected float directionMultiplier = 1;
     protected Rigidbody2D _rb;
 
     bool _firstFrame = true;
@@ -24,8 +24,6 @@ public class ProjectileBase : MonoBehaviour
     [SerializeField] protected GameObject explosion;
     protected virtual void Start()
     {
-
-
         if(startSound != null) SoundPlayer.PlayOneShot(startSound);
 
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -45,23 +43,41 @@ public class ProjectileBase : MonoBehaviour
         else
             _spriteRenderer.sprite = _normalSprite;
 
-        _rb.velocity = transform.up * speed * directionMultiplier;
+        Move();
     }
 
+    protected virtual void Move()
+    {
+        _rb.velocity = transform.up * speed * directionMultiplier;
+    }
 
     protected virtual void OnTriggerEnter2D(Collider2D collider)
     {
 
         EntityBase ent = collider.transform.GetComponent<EntityBase>();
-        //if(typeof(ent).IsAssignableFrom(typeof(PlayerBehaviour)))
-        if((ent is PlayerBehaviour && isEnemy) || (ent is EnemyBase && !isEnemy))
+        if(ent != null)
         {
-            ent.TakeDamage(damage);
+            if((ent is PlayerBehaviour && isEnemy) || (ent is EnemyBase && !isEnemy))
+            {
+                ent.TakeDamage(damage);
 
-            Explode();
+                Explode();
 
-            Destroy(this.gameObject, 0f);
+                Destroy(this.gameObject, 0f);
+                return;
+            }
         }
+        var hurtbox = collider.GetComponent<DisjointedHurtBox>();
+        if (hurtbox != null)
+        {
+            if (hurtbox.isEnemy != isEnemy)
+            {
+                hurtbox.TakeDamage(damage);
+                Explode();
+                Destroy(this.gameObject, 0f);
+            }
+        }
+
     }
 
     protected virtual void Explode()

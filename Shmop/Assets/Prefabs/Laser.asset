@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9152ab7ad0a44be4cacd07e5b4df6b1a, type: 3}
   m_Name: Laser
   m_EditorClassIdentifier: 
-  name_: Lazer
+  name_: Laser
   sprite_: {fileID: 21300000, guid: 03c26e1595b9b7c45ae0d715e57d2817, type: 3}
   audioClip_: {fileID: 8300000, guid: a1b01a9a6a2f2454c84b44030a4fe892, type: 3}
   baseCooldown_: 15

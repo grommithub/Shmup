@@ -14,11 +14,13 @@ public class TextBox : MonoBehaviour
     [SerializeField] private GameObject activePosition_;
     [SerializeField] private UnityEvent preIntroductionState_;
     [SerializeField] private UnityEvent postIntroductionState_;
+    [SerializeField] private UnityEvent callAbilityBox_;
     [SerializeField] private float moveTime_;
     private bool firstTime_;
-    //private bool isTutorial_;
+    private bool isTutorial_;
     private char[] letters_;
     private int arraySize_;
+    private int stageCounter_;
     private int i; //index of current text used
     private Vector3 activePos_;
     private Vector3 inActivePos_;
@@ -28,7 +30,7 @@ public class TextBox : MonoBehaviour
     public float revealTime_;
     public float delay_;
     public float buttonWaitTime_;
-    public bool inHyperDrive_;
+    [HideInInspector] public bool inHyperDrive_;
     [TextArea] public string[] text_;
 
     void Start()
@@ -41,8 +43,9 @@ public class TextBox : MonoBehaviour
         activePos_ = activePosition_.transform.position;
         arraySize_ = text_.Length;
         firstTime_ = true;
-        //isTutorial_ = true;
+        isTutorial_ = true;
         inHyperDrive_ = false;
+        stageCounter_ = 1;
         i = 0;
 
         StartCoroutine(BoxMovement(activePos_, true));
@@ -84,14 +87,28 @@ public class TextBox : MonoBehaviour
         }
         else
         {
-            inHyperDrive_ = false;
+            //inHyperDrive_ = false;
             ClearText();
-            postIntroductionState_.Invoke();
             i++;
-            //if(isTutorial_)
-            //{
-
-            //}
+            if (isTutorial_)
+            {
+                postIntroductionState_.Invoke();
+                isTutorial_ = false;
+            }
+            else
+            {
+                if (stageCounter_ == 1 || stageCounter_ == 3 || stageCounter_ == 4)
+                {
+                    callAbilityBox_.Invoke();
+                    stageCounter_++;
+                }
+                else
+                {
+                    postIntroductionState_.Invoke();
+                    inHyperDrive_ = false;
+                    stageCounter_++;
+                }
+            }
         }
     }
 
@@ -124,6 +141,11 @@ public class TextBox : MonoBehaviour
     public void MoveOut()
     {
         StartCoroutine(BoxMovement(activePos_, true));
+    }
+
+    public void ReturnInterface()
+    {
+        postIntroductionState_.Invoke();
     }
 
     private void ClearText()

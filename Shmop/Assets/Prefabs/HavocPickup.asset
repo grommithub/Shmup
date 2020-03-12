@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c2f89bcebe5c499f04325c755aedf, type: 3}
+  m_Name: HavocPickup
+  m_EditorClassIdentifier: 
+  name_: Havoc
+  description_: Powerful weapon
+  sprite_: {fileID: 21300000, guid: 443fc8c2ade55324c92bcf6abdbd18ab, type: 3}
+  ability_: {fileID: 11400000, guid: bebbd0cb272f0b548a5f3ea4cb087c0a, type: 2}
+  abilityHolder_: {fileID: 2785326312796251914, guid: e5f496bc659fa814893fd03b57a577ea,
+    type: 3}

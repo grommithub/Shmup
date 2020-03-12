@@ -11,8 +11,8 @@ public class AbilityCooldown : MonoBehaviour
     public TextMeshProUGUI cooldownText_; //numbers on the ability icon that are supposed to show how many seconds left until cooldown's end
     public Image darkMask_; //a dark mask of an icon should be contained here
     public KeyCode activationKey_; //key for triggering the ability. Currently should be choosed manually
+    public Ability ability_; //contains the ability that we (currently) should choose manually for the script
 
-    [SerializeField] private Ability ability_; //contains the ability that we (currently) should choose manually for the script
     [SerializeField] private GameObject player_; //contains the gameobject (primarily the player) that holds the abilities execution scripts
     private Image iconImage_; 
     private AudioSource abilitySource_; //gets sound source that is used by ability when triggered

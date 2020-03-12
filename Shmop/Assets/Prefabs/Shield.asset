@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cea5bf836d0b174b8d7850f7fb33e41, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  name_: Basic Shield
+  name_: Shield
   sprite_: {fileID: 21300000, guid: 43885d9602b2f6146bec04c4f35ef28b, type: 3}
   audioClip_: {fileID: 8300000, guid: ca0f1c9a9e8b52542904f1567a196002, type: 3}
   baseCooldown_: 16

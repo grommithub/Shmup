@@ -247,7 +247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57052118}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 13.41, y: 0.02, z: 0}
+  m_LocalPosition: {x: 15.29, y: 0.02, z: 0}
   m_LocalScale: {x: 1.9410026, y: 4.7451587, z: 1}
   m_Children:
   - {fileID: 2075343531}
@@ -638,7 +638,7 @@ PrefabInstance:
     - target: {fileID: 1599526420935019847, guid: 2590c9a7c96892f49a91da84ee39a713,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.41
+      value: 15.29
       objectReference: {fileID: 0}
     - target: {fileID: 1599526420935019847, guid: 2590c9a7c96892f49a91da84ee39a713,
         type: 3}
@@ -843,22 +843,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  moveTime_: 15
-  revealTime_: 0.1
+  moveTime_: 30
+  revealTime_: 0.02
   delay_: 1
   buttonWaitTime_: 1
   inHyperDrive_: 0
   text_:
-  - EEEEEEEEEEE
-  - WWWWWWWWWW
-  - QQQQQQQQQ
-  - TTTTTTTTTTT
-  - YYYYYYYYY
-  - UUUUUUUUU
-  - IIIIIIIIIIIIIIIIIIIIIIIIII
-  - IIIIIIIIIIIIIIIIIIIIIIIIII
-  - The upcoming boss is impossible. Not even Dan, master of all 3 abilities, can
-    defeat him.
+  - '>An advanced alien race will attack tomorrow. The plan is to have you fly in
+    a few hours, take out some scouting ships and their base before they launch their
+    attack. '
+  - '>During your mission we will send you a care package every hyper-jump. A little
+    something to help you. Choose wisely.'
+  - '>Be careful now. We received intel that your next enemy cannot be killed. Dodge
+    and pray.'
+  - '>Remember, we all depend on you. No pressure tho :)'
+  - '>I mean, if  you fuck this up, the whole galaxy dies ;)'
+  - '>Oops, forgot to tell you about the boss. My baaaad ^-^'
+  - '>Anyway, you got this.'
+  - '>Damn, you good at this'
+  - '>Have fun ;)'
+  - '>See? I had no doubts. Good job ;)'
 --- !u!1001 &284903609
 PrefabInstance:
   m_ObjectHideFlags: 0

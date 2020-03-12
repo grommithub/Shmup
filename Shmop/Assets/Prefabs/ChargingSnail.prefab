@@ -128,7 +128,7 @@ MonoBehaviour:
   maxExplosionDistance: 1
   _rotationSpeed: 5
   _rotationAmount: -6
-  _onCollideDamage: 5
+  _onCollideDamage: 2
   _weapon: {fileID: 0}
   _drop: {fileID: 0}
   verticality: 0

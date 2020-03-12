@@ -15,7 +15,8 @@ public class Hyperdrive : MonoBehaviour
 
     [SerializeField] private UnityEvent _startHyperDrive;
     [SerializeField] private UnityEvent _startCentering;
-    
+    [SerializeField] private GameObject _textBox;
+
     [SerializeField] private float _centeringTime = 5f;
     [SerializeField] private float _hyperDrivespeed = 30f;
 
@@ -26,12 +27,17 @@ public class Hyperdrive : MonoBehaviour
 
     private Vector2 _middle = new Vector2();
     private Vector2 _startOffset = new Vector2();
-    
+
+    private TextBox _textBoxComponent;
+    private Rigidbody2D _rb;
+
     private float _centerStartTime;
 
     private void Start()
     {
-        _middle = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/3, Screen.height/2, 0f));
+        _middle = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 3, Screen.height / 2, 0f));
+        _textBoxComponent = _textBox.GetComponent<TextBox>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     public void StartHyperDrive()
@@ -74,8 +80,16 @@ public class Hyperdrive : MonoBehaviour
     public IEnumerator MiniHyperDrive()
     {
         yield return new WaitForSeconds(_miniHyperDriveTime / 2);
+        
+        _textBoxComponent.inHyperDrive_ = true;
+
         _startMiniHyperDrive.Invoke();
-        yield return new WaitForSeconds(_miniHyperDriveTime / 2);
+        _rb.velocity = Vector2.zero;
+        while (_textBoxComponent.inHyperDrive_ == true)
+        {
+            yield return null;
+        }
+        //yield return new WaitUntil(() => GetComponent<TextBox>().inHyperDrive_ == false);
         _stopMiniHyperDrive.Invoke();
         yield return null;
     }

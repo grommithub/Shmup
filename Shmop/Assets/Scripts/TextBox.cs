@@ -16,7 +16,10 @@ public class TextBox : MonoBehaviour
     [SerializeField] private UnityEvent postIntroductionState_;
     [SerializeField] private float moveTime_;
     private bool firstTime_;
+    //private bool isTutorial_;
     private char[] letters_;
+    private int arraySize_;
+    private int i; //index of current text used
     private Vector3 activePos_;
     private Vector3 inActivePos_;
     private Rigidbody2D rb2D_;
@@ -25,9 +28,9 @@ public class TextBox : MonoBehaviour
     public float revealTime_;
     public float delay_;
     public float buttonWaitTime_;
-    [TextArea] public string text_ = string.Empty;
+    public bool inHyperDrive_;
+    [TextArea] public string[] text_;
 
-    // Start is called before the first frame update
     void Start()
     {
         preIntroductionState_.Invoke();
@@ -36,11 +39,22 @@ public class TextBox : MonoBehaviour
         rb2D_ = GetComponent<Rigidbody2D>();
         inActivePos_ = inActivePosition_.transform.position;
         activePos_ = activePosition_.transform.position;
-        letters_ = text_.ToCharArray();
+        arraySize_ = text_.Length;
         firstTime_ = true;
+        //isTutorial_ = true;
+        inHyperDrive_ = false;
+        i = 0;
 
         StartCoroutine(BoxMovement(activePos_, true));
     }
+
+    //private void Update()
+    //{
+    //    if(inHyperDrive_)
+    //    {
+    //        StartCoroutine(BoxMovement(activePos_, true));
+    //    }
+    //}
 
     /*This method gets a point of a final destination as an argument (vector3 end_) and also 
      takes statement whether the text box is moving out ON or OFF of screen (True stands for ON)*/
@@ -64,18 +78,33 @@ public class TextBox : MonoBehaviour
 
         if (isActive_)
         {
-            StartCoroutine(SpawnText());
+            Debug.Log(i);
+            preIntroductionState_.Invoke();
+            StartCoroutine(SpawnText(i));
         }
         else
         {
+            inHyperDrive_ = false;
             ClearText();
             postIntroductionState_.Invoke();
+            i++;
+            //if(isTutorial_)
+            //{
+
+            //}
         }
     }
 
-    IEnumerator SpawnText()
+    IEnumerator SpawnText(int index)
     {
+        if(index > arraySize_)
+        {
+            Debug.Log("Error: text_ array (TextBox.cs) index is out of range");
+        }
+
         textMeshPro_ = textHolder_.GetComponent<TextMeshProUGUI>();
+
+        letters_ = text_[index].ToCharArray();
 
         for (int i = 0; i < letters_.Length; i++)
         {
@@ -90,6 +119,11 @@ public class TextBox : MonoBehaviour
     public void MoveBack()
     {
         StartCoroutine(BoxMovement(inActivePos_, false));
+    }
+
+    public void MoveOut()
+    {
+        StartCoroutine(BoxMovement(activePos_, true));
     }
 
     private void ClearText()

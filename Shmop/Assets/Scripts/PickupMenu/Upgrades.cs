@@ -9,6 +9,8 @@ public abstract class Upgrades : ScriptableObject
     public Sprite sprite_; //sprite of an icon 
 
     [HideInInspector] public int index_;
+    [HideInInspector] public bool upgradeIsPicked_ = false;
+    [HideInInspector] public bool abilityIsUnlocked_ = false;
 
     public abstract void Initialize(GameObject obj); //get components from the target game objects, set all required references here
 

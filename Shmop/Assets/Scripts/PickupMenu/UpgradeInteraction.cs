@@ -15,7 +15,6 @@ public class UpgradeInteraction : MonoBehaviour
     //[SerializeField] private GameObject player_; //contains the gameobject (primarily the player) that holds the abilities execution scripts
     private Image iconImage_;
     private UpgradeIconHandler upgradeIconHandlerComponent_;
-    private List<Upgrades> tempUpgrades_;
     private int optionsAmount_;
     private int poolSize_;
     private int[] bannedNumbers_ = { };
@@ -37,14 +36,27 @@ public class UpgradeInteraction : MonoBehaviour
 
     public void AssignUpgrades()
     {
-        tempUpgrades_ = upgrades_;
+        for (int i = 0; i <= poolSize_; i++)
+        {
+            upgrades_[i].upgradeIsPicked_ = false;
+            upgrades_[i].index_ = 0;
+        }
         for (int i = 0; i <= optionsAmount_; i++)
         {
-            poolSize_ = tempUpgrades_.Count - 1;
+            poolSize_ = upgrades_.Count - 1;
             int rng = Random.Range(0, poolSize_ + 1);
-            Debug.Log(rng);
-            Initialize(tempUpgrades_[rng], buttons_[i], rng);
-            //tempUpgrades_.RemoveAt(rng); 
+            if(upgrades_[rng].upgradeIsPicked_)
+            {
+                while(upgrades_[rng].upgradeIsPicked_)
+                {
+                    rng = Random.Range(0, poolSize_ + 1);
+                }
+            }
+            else
+            {
+                Debug.Log(rng);
+                Initialize(upgrades_[rng], buttons_[i], rng);
+            }
         }
     }
 

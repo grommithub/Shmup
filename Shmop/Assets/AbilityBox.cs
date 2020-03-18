@@ -34,14 +34,8 @@ public class AbilityBox : MonoBehaviour
         inActivePos_ = inActivePosition_.transform.position;
         activePos_ = activePosition_.transform.position;
         inHyperDrive_ = false;
-        button_.SetActive(true);
 
         //StartCoroutine(BoxMovement(activePos_, true));
-    }
-
-    private void Update()
-    {
-
     }
 
     /*This method gets a point of a final destination as an argument (vector3 end_) and also 

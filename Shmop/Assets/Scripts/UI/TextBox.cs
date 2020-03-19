@@ -126,6 +126,11 @@ public class TextBox : MonoBehaviour
         for (int i = 0; i < letters_.Length; i++)
         {
             textMeshPro_.text += letters_[i];
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                textMeshPro_.text = text_[index];
+                break;
+            }
             yield return new WaitForSeconds(revealTime_);
         }
 

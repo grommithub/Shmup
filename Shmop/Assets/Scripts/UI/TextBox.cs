@@ -14,6 +14,7 @@ public class TextBox : MonoBehaviour
     [SerializeField] private GameObject activePosition_;
     [SerializeField] private UnityEvent preIntroductionState_;
     [SerializeField] private UnityEvent postIntroductionState_;
+    [SerializeField] private UnityEvent callDropRobot_;
     [SerializeField] private UnityEvent callAbilityBox_;
     [SerializeField] private float moveTime_;
     private bool firstTime_;
@@ -99,7 +100,7 @@ public class TextBox : MonoBehaviour
             {
                 if (stageCounter_ == 1 || stageCounter_ == 3 || stageCounter_ == 4)
                 {
-                    callAbilityBox_.Invoke();
+                    StartCoroutine("CallRobot");
                     stageCounter_++;
                 }
                 else
@@ -156,5 +157,11 @@ public class TextBox : MonoBehaviour
     private void ClearText()
     {
         textMeshPro_.text = string.Empty;
+    }
+    IEnumerator CallRobot()
+    {
+        callDropRobot_.Invoke();
+        yield return new WaitForSeconds(1.8f);
+        callAbilityBox_.Invoke();
     }
 }

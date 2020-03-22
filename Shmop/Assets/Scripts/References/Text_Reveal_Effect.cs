@@ -8,11 +8,9 @@ public class Text_Reveal_Effect : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text_mesh_pro_;
     private bool is_true_ = true;
     public float reveal_time_ = 0.25f;
-    public string text_ = "";
+    [TextArea] public string text_ = "";
     private char[] letters_;
 
-
-    
     // Start is called before the first frame update
     void Start()
     {

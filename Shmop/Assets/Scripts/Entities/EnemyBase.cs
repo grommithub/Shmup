@@ -11,6 +11,7 @@ public class EnemyBase : EntityBase
     protected override void Start()
     {
         _drop = GetComponent<DropItem>();
+        _weapon = GetComponent<Weapon>();
         base.Start();
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)
@@ -24,6 +25,7 @@ public class EnemyBase : EntityBase
 
     public override void TakeDamage(int incomingDamage)
     {
+        SoundPlayer.PlayOneShot(SoundPlayer._soundPlayer.enemyHurt);
         base.TakeDamage(incomingDamage);
         if(_colourSprite != null)
         {
@@ -37,7 +39,7 @@ public class EnemyBase : EntityBase
         {
             _drop.GetRandomDrop();
         }
-        else print("thing doesn't exist");
+        else print("no drops for you");
 
         base.Die();
     }

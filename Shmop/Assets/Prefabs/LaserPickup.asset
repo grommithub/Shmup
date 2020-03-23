@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c2f89bcebe5c499f04325c755aedf, type: 3}
+  m_Name: LaserPickup
+  m_EditorClassIdentifier: 
+  name_: Laser
+  description_: Powerful laser that deals continious damage to enemies on contact
+  sprite_: {fileID: 21300000, guid: 38a4a5a70d5f4c64fa7ae81de97511ec, type: 3}
+  ability_: {fileID: 11400000, guid: c8ad5a007084d6c43baa359a32c19840, type: 2}
+  abilityHolder_: {fileID: 711497213769009267, guid: 50e7d78aa91be5f4caf852daab935f55,
+    type: 3}

@@ -9,6 +9,7 @@ public class AnimationDelay : MonoBehaviour
     private Animator _animator;
     private float _spawnTime;
 
+
     public void SetWaitTime(float waitTime)
     {
         _animator = GetComponent<Animator>();

@@ -7,7 +7,7 @@ public class Waves : MonoBehaviour
     [SerializeField] private List<Wave> _waves = new List<Wave>();
     [SerializeField] private List<List<Wave>> levels = new List<List<Wave>>();
     private RandomSpawner _spawner;
-    private int _waveNum = 0;
+    [SerializeField]private int _waveNum = 0;
     private bool _spawning = true;
     private bool _waiting;
 

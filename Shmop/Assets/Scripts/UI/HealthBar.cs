@@ -25,7 +25,9 @@ public class HealthBar : MonoBehaviour
         }
 
         int index = 10 - _player.Health;
-        Mathf.Clamp(index, 0, _healthSprites.Length - 1);
+
+        index = Mathf.Max(0, index);
+        index = Mathf.Min(_healthSprites.Length -1, index);
         _img.sprite = _healthSprites[index];
     }
 }

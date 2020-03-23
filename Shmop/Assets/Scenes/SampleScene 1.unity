@@ -593,8 +593,8 @@ MonoBehaviour:
     amount: 1
     interval: 1
   - enemy: {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833, type: 3}
-    amount: 15
-    interval: 0.9
+    amount: 9
+    interval: 1
   - enemy: {fileID: 5543269025601578204, guid: 0098849068842e14b9c3ec2b06044e0a, type: 3}
     amount: 20
     interval: 0.4
@@ -604,6 +604,7 @@ MonoBehaviour:
   - enemy: {fileID: 8036146541917799967, guid: 4dc237ba62ec10a468fcd45f6edfe5cc, type: 3}
     amount: 1
     interval: 1
+  _waveNum: 6
   _pauseTime: 3
 --- !u!1 &108289261 stripped
 GameObject:
@@ -5602,6 +5603,11 @@ PrefabInstance:
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3331725737357122315, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+        type: 3}
+      propertyPath: _shootSpeed
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6391855454798915932, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}

@@ -663,8 +663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca3c70b9fa664241ae2b8ce4ab9a4b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 90
-  _health: 0
+  _maxHealth: 60
+  _health: 60
   _speed: 10
   explosion: {fileID: 866509802676848075, guid: 37182c51b20c3e7428ab7a10a0221410,
     type: 3}
@@ -673,18 +673,18 @@ MonoBehaviour:
   _rotationSpeed: 0
   _rotationAmount: 0
   _onCollideDamage: 1
-  _weapon: {fileID: 0}
+  _weapon: {fileID: 8036146542056701170}
   _drop: {fileID: 0}
   _gunMuzzle: {fileID: 8036146542056701169}
   _shotsPerPrrap: 5
   _prrraps: 4
-  _prrrapInterval: 0.3
+  _prrrapInterval: 1
   _shotInterval: 0.3
   _gunRotationOnShoot: 10
   _aimSpeed: 10
   _parts:
-  - {fileID: 8036146540945373097}
   - {fileID: 8036146541411570930}
+  - {fileID: 8036146540945373097}
   - {fileID: 8036146540850303503}
   _rollspeed: 15
   rollTime: 3
@@ -693,7 +693,7 @@ MonoBehaviour:
     type: 3}
   _superSprays: 10
   _sprayDelay: 0.5
-  sinMoveStartTime: 0
+  sinMoveStartTime: 94.75657
   _rockets: 7
   _rocketWaitTime: 0.5
 --- !u!61 &8036146541917799955

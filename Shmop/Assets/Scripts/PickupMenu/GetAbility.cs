@@ -22,13 +22,13 @@ public class GetAbility : MonoBehaviour
         {
             shield_.SetActive(true);
             shield_.GetComponent<AbilityCooldown>().ability_ = this.ability_;
-            havoc_.GetComponent<AbilityCooldown>().Reinitialize();
+            shield_.GetComponent<AbilityCooldown>().Reinitialize();
         } 
         else if (ability_.name_ == "Laser")
         {
             laser_.SetActive(true);
             laser_.GetComponent<AbilityCooldown>().ability_ = this.ability_;
-            havoc_.GetComponent<AbilityCooldown>().Reinitialize();
+            laser_.GetComponent<AbilityCooldown>().Reinitialize();
         }
         else Debug.Log("GetAbility.cs: Error");
     }

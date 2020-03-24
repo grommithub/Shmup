@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12c2f89bcebe5c499f04325c755aedf, type: 3}
   m_Name: Upgraded Havoc Pickup
   m_EditorClassIdentifier: 
-  name_: 
-  description_: 
-  sprite_: {fileID: 0}
-  index_: 0
-  upgradeIsPicked_: 0
+  name_: Upgraded Havoc
+  description_: Upgraded version of havoc
+  sprite_: {fileID: 21300000, guid: 72085d08835f951478a66b405aee1cb6, type: 3}
+  index_: 1
+  upgradeIsPicked_: 1
   abilityIsUnlocked_: 0
-  ability_: {fileID: 0}
+  ability_: {fileID: 11400000, guid: 0ba4ef6db935f3f45bf6c56fd9ce271a, type: 2}

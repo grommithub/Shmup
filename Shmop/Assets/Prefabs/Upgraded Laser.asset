@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9152ab7ad0a44be4cacd07e5b4df6b1a, type: 3}
   m_Name: Upgraded Laser
   m_EditorClassIdentifier: 
-  name_: 
-  sprite_: {fileID: 21300000, guid: 256fac8e352c23e4d8333b0f515faf05, type: 3}
+  name_: Laser
+  sprite_: {fileID: 21300000, guid: 39ac325ea7da5464d9716df28e25c0ba, type: 3}
   audioClip_: {fileID: 8300000, guid: a1b01a9a6a2f2454c84b44030a4fe892, type: 3}
-  baseCooldown_: 0
-  laserDuration_: 0
-  laserDamage_: 0
+  baseCooldown_: 17
+  laserDuration_: 7
+  laserDamage_: 2

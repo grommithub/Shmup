@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12c2f89bcebe5c499f04325c755aedf, type: 3}
   m_Name: Upgraded Shield Pickup
   m_EditorClassIdentifier: 
-  name_: 
-  description_: 
-  sprite_: {fileID: 0}
+  name_: Upgraded Shield
+  description_: Upgraded version of a shield
+  sprite_: {fileID: 21300000, guid: 54fbfec82035b334f9063f94db32464e, type: 3}
   index_: 0
   upgradeIsPicked_: 0
   abilityIsUnlocked_: 0
-  ability_: {fileID: 0}
+  ability_: {fileID: 11400000, guid: 37dc9ac77bb702549823a1d3c439a96e, type: 2}

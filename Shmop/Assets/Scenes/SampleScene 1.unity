@@ -273,6 +273,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: be44b3bce76cb7b4a9af6f0340670a0f, type: 2}
   - {fileID: 11400000, guid: bb22325cb6f67414fa19674c82f61802, type: 2}
   - {fileID: 11400000, guid: 187a92284ad718a4c844f73ba76ce7c4, type: 2}
+  - {fileID: 11400000, guid: 9285d74fcba036540aa2bf83b4cadab6, type: 2}
+  - {fileID: 11400000, guid: 6c882fb810b10ce4f9a07461bc2fe7a3, type: 2}
+  - {fileID: 11400000, guid: c788032c01f27574e859d10e2d90791f, type: 2}
   buttons_:
   - {fileID: 1691596939}
   - {fileID: 752098854}
@@ -5725,6 +5728,12 @@ PrefabInstance:
       propertyPath: _shootSpeed
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 3331725737357122315, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 397497191874776675, guid: 3422bf7d9e4d76a4a9c114da2fd7b40c,
+        type: 3}
     - target: {fileID: 6391855454798915932, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}
       propertyPath: m_Name

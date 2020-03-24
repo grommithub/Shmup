@@ -1500,7 +1500,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _bossTwo
       value: 
-      objectReference: {fileID: 8300000, guid: 356c3778ebf8b0942a3acb0480e670a2, type: 3}
+      objectReference: {fileID: 8300000, guid: 95dc645f5ac92164f844db6ecef4975e, type: 3}
     - target: {fileID: 754662394432919394, guid: 2dc1e7b8c1dab0b4ebbc29924d352cdd,
         type: 3}
       propertyPath: m_Name

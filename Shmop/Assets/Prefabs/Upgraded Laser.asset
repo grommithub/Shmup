@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9152ab7ad0a44be4cacd07e5b4df6b1a, type: 3}
-  m_Name: UpgradedLaser
+  m_Name: Upgraded Laser
   m_EditorClassIdentifier: 
   name_: 
   sprite_: {fileID: 21300000, guid: 256fac8e352c23e4d8333b0f515faf05, type: 3}

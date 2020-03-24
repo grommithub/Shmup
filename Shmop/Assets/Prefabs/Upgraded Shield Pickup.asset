@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12c2f89bcebe5c499f04325c755aedf, type: 3}
+  m_Name: Upgraded Shield Pickup
+  m_EditorClassIdentifier: 
+  name_: Upgraded Shield
+  description_: Upgraded version of a shield
+  sprite_: {fileID: 21300000, guid: 54fbfec82035b334f9063f94db32464e, type: 3}
+  index_: 0
+  upgradeIsPicked_: 0
+  abilityIsUnlocked_: 0
+  ability_: {fileID: 11400000, guid: 37dc9ac77bb702549823a1d3c439a96e, type: 2}

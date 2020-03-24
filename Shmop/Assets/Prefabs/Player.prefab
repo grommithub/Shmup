@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ec98b6fa16e32428dffaccca696a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemy: 0
 --- !u!1 &1336444048
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +234,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e9319c661ec22d7488ab3db77f2ee750, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bea4f36706008224aaa25c40aca1dd2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -491,6 +492,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ecb10f8c5ce7ed40b78b484b8dae7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startMiniHyperDrive:
+    m_PersistentCalls:
+      m_Calls: []
+  _stopMiniHyperDrive:
+    m_PersistentCalls:
+      m_Calls: []
+  _miniHyperDriveTime: 3
   _startHyperDrive:
     m_PersistentCalls:
       m_Calls:
@@ -585,6 +593,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _textBox: {fileID: 0}
   _centeringTime: 2
   _hyperDrivespeed: 10
   _stretch: 1.25

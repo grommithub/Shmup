@@ -273,6 +273,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: be44b3bce76cb7b4a9af6f0340670a0f, type: 2}
   - {fileID: 11400000, guid: bb22325cb6f67414fa19674c82f61802, type: 2}
   - {fileID: 11400000, guid: 187a92284ad718a4c844f73ba76ce7c4, type: 2}
+  - {fileID: 11400000, guid: 9285d74fcba036540aa2bf83b4cadab6, type: 2}
+  - {fileID: 11400000, guid: 6c882fb810b10ce4f9a07461bc2fe7a3, type: 2}
+  - {fileID: 11400000, guid: c788032c01f27574e859d10e2d90791f, type: 2}
   buttons_:
   - {fileID: 1691596939}
   - {fileID: 752098854}
@@ -604,7 +607,7 @@ MonoBehaviour:
   - enemy: {fileID: 8036146541917799967, guid: 4dc237ba62ec10a468fcd45f6edfe5cc, type: 3}
     amount: 1
     interval: 1
-  _waveNum: 6
+  _waveNum: 0
   _pauseTime: 3
 --- !u!1 &108289261 stripped
 GameObject:
@@ -2112,6 +2115,122 @@ MonoBehaviour:
   havoc_: {fileID: 388686039}
   laser_: {fileID: 108289261}
   ability_: {fileID: 0}
+--- !u!1 &976423113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976423114}
+  - component: {fileID: 976423117}
+  - component: {fileID: 976423116}
+  - component: {fileID: 976423115}
+  m_Layer: 0
+  m_Name: Fume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976423114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976423113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.83, y: 0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 61364318}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &976423115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976423113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1100a13cb1100345bd72c9dc9527585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ownColour: {r: 0, g: 0, b: 0, a: 0}
+--- !u!95 &976423116
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976423113}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e6ea9ed29d1f564e864ed3984dc5ce1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &976423117
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976423113}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -7022258573504456588, guid: 8a825f516656f8f46a3d98909916d07d,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.28, y: 1.28}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1053720254
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,6 +5281,11 @@ PrefabInstance:
       propertyPath: player_
       value: 
       objectReference: {fileID: 61364306}
+    - target: {fileID: 711497213769009264, guid: 50e7d78aa91be5f4caf852daab935f55,
+        type: 3}
+      propertyPath: ability_
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 711497213769009266, guid: 50e7d78aa91be5f4caf852daab935f55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5609,6 +5733,12 @@ PrefabInstance:
       propertyPath: _shootSpeed
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 3331725737357122315, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 397497191874776675, guid: 3422bf7d9e4d76a4a9c114da2fd7b40c,
+        type: 3}
     - target: {fileID: 6391855454798915932, guid: f94c8951bd7deb0478fbdab8195d9fd0,
         type: 3}
       propertyPath: m_Name
@@ -5840,6 +5970,11 @@ PrefabInstance:
       propertyPath: player_
       value: 
       objectReference: {fileID: 61364306}
+    - target: {fileID: 2785326312796251912, guid: e5f496bc659fa814893fd03b57a577ea,
+        type: 3}
+      propertyPath: ability_
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2785326312796251914, guid: e5f496bc659fa814893fd03b57a577ea,
         type: 3}
       propertyPath: m_Name
@@ -5969,6 +6104,11 @@ PrefabInstance:
       propertyPath: player_
       value: 
       objectReference: {fileID: 61364306}
+    - target: {fileID: 8325402289598866153, guid: 4d2bd77f817faf249b8a52100afa6900,
+        type: 3}
+      propertyPath: ability_
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8325402289598866155, guid: 4d2bd77f817faf249b8a52100afa6900,
         type: 3}
       propertyPath: m_LocalPosition.x

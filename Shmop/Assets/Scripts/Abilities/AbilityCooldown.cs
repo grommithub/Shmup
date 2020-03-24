@@ -52,6 +52,11 @@ public class AbilityCooldown : MonoBehaviour
         AbilityReady();
     }
 
+    public void Reinitialize()
+    {
+        Initialize(ability_, player_);
+    }
+
     private void KeyTriggered() //this function executes actions taken when player activates the ability
     {
         nextReadyTime_ = Time.time + cooldownDuration_;

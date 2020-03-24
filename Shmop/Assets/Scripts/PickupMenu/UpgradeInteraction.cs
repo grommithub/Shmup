@@ -36,6 +36,7 @@ public class UpgradeInteraction : MonoBehaviour
 
     public void AssignUpgrades()
     {
+        poolSize_ = upgrades_.Count - 1;
         for (int i = 0; i <= poolSize_; i++)
         {
             upgrades_[i].upgradeIsPicked_ = false;
@@ -43,7 +44,6 @@ public class UpgradeInteraction : MonoBehaviour
         }
         for (int i = 0; i <= optionsAmount_; i++)
         {
-            poolSize_ = upgrades_.Count - 1;
             int rng = Random.Range(0, poolSize_ + 1);
             if(upgrades_[rng].upgradeIsPicked_)
             {
@@ -55,6 +55,7 @@ public class UpgradeInteraction : MonoBehaviour
             else
             {
                 Debug.Log(rng);
+                upgrades_[rng].upgradeIsPicked_ = true;
                 Initialize(upgrades_[rng], buttons_[i], rng);
             }
         }

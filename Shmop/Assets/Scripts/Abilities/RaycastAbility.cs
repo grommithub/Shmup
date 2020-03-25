@@ -17,6 +17,7 @@ public class RaycastAbility : Ability
         raycast_ = FindObjectOfType<RaycastTrigger>();
 
         raycast_._duration = this.laserDuration_;
+        raycast_._laserDamage = this.laserDamage_;
     }
 
     public override void TriggerAbility()

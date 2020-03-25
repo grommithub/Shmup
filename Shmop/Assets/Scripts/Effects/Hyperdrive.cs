@@ -24,6 +24,7 @@ public class Hyperdrive : MonoBehaviour
     
     private bool _hyperDriving;
     private bool _centering;
+    private bool _centersShip;
 
     private Vector2 _middle = new Vector2();
     private Vector2 _startOffset = new Vector2();
@@ -38,6 +39,7 @@ public class Hyperdrive : MonoBehaviour
         _middle = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 3, Screen.height / 2, 0f));
         _textBoxComponent = _textBox.GetComponent<TextBox>();
         _rb = GetComponent<Rigidbody2D>();
+        _centersShip = false;
     }
 
     public void StartHyperDrive()
@@ -92,5 +94,31 @@ public class Hyperdrive : MonoBehaviour
         //yield return new WaitUntil(() => GetComponent<TextBox>().inHyperDrive_ == false);
         _stopMiniHyperDrive.Invoke();
         yield return null;
+    }
+
+    public void DoCentering()
+    {
+        StartCoroutine(CenterShip());
+    }
+
+    IEnumerator CenterShip()
+    {
+        _centerStartTime = Time.time;
+        _centersShip = true;
+        _startOffset = (Vector2)transform.position - _middle;
+
+        while (_centersShip)
+        {
+            if (Time.time >= _centerStartTime + _centeringTime)
+            {
+                _centersShip = false;
+            }
+
+            float fraction = ((Time.time - _centerStartTime) / _centeringTime);
+            fraction = Mathf.Min(1f, fraction);
+            transform.position = (_middle + _startOffset) - (_startOffset * fraction);
+
+            yield return null;
+        }
     }
 }

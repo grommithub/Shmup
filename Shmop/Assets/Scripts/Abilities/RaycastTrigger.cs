@@ -15,6 +15,8 @@ public class RaycastTrigger : MonoBehaviour
     [SerializeField] private float maxExplosionDist;
     [SerializeField] private GameObject _explosion;
 
+    [HideInInspector] public int _laserDamage;
+
     private float lastHit;
     private void Start()
     {
@@ -50,7 +52,7 @@ public class RaycastTrigger : MonoBehaviour
                         SetLength(hit.point);
                         _enemyHit = enemy;
                         SpawnExplosion();
-                        enemy.TakeDamage(1);
+                        enemy.TakeDamage(_laserDamage);
                         lastHit = Time.time;
                     }
                     else if (Time.time > lastHit + _damageInterval)
@@ -58,7 +60,7 @@ public class RaycastTrigger : MonoBehaviour
                         SetLength(hit.point);
                         _enemyHit = enemy;
                         lastHit = Time.time;
-                        _enemyHit.TakeDamage(1);
+                        _enemyHit.TakeDamage(_laserDamage);
                     }
                     for(int i = 0; i < 2; i++)
                     {

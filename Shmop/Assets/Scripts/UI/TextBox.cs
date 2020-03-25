@@ -16,8 +16,10 @@ public class TextBox : MonoBehaviour
     [SerializeField] private UnityEvent postIntroductionState_;
     [SerializeField] private UnityEvent callAbilityBox_;
     [SerializeField] private float moveTime_;
+    [SerializeField] private float centeringTime_;
     private bool firstTime_;
     private bool isTutorial_;
+    private bool isCentering_;
     private char[] letters_;
     private int arraySize_;
     private int stageCounter_;
@@ -45,6 +47,7 @@ public class TextBox : MonoBehaviour
         firstTime_ = true;
         isTutorial_ = true;
         inHyperDrive_ = false;
+        isCentering_ = false;
         stageCounter_ = 1;
         i = 0;
 
@@ -126,7 +129,7 @@ public class TextBox : MonoBehaviour
         for (int i = 0; i < letters_.Length; i++)
         {
             textMeshPro_.text += letters_[i];
-            if(Input.GetKeyDown(KeyCode.Return))
+            if(Input.GetKey(KeyCode.Return))
             {
                 textMeshPro_.text = text_[index];
                 break;

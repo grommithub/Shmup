@@ -301,6 +301,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9750dd4e49eb2294890c961c0a2a4aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &61364310 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0,
+    type: 3}
+  m_PrefabInstance: {fileID: 7069164077700074330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61364306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecb10f8c5ce7ed40b78b484b8dae7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &61364311 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 61364315, guid: f94c8951bd7deb0478fbdab8195d9fd0,
@@ -879,6 +891,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   moveTime_: 30
+  centeringTime_: 0
   revealTime_: 0.05
   delay_: 1
   buttonWaitTime_: 1
@@ -6290,7 +6303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _stopMiniHyperDrive.m_PersistentCalls.m_Calls.Array.size
@@ -6554,7 +6567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
@@ -6563,7 +6576,7 @@ PrefabInstance:
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
-      objectReference: {fileID: 61364315}
+      objectReference: {fileID: 61364310}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startHyperDrive.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
       value: 6
@@ -6594,7 +6607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
-      value: set_enabled
+      value: DoCentering
       objectReference: {fileID: 0}
     - target: {fileID: 61364312, guid: f94c8951bd7deb0478fbdab8195d9fd0, type: 3}
       propertyPath: _startMiniHyperDrive.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName

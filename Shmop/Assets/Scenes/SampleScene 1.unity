@@ -619,8 +619,8 @@ MonoBehaviour:
   _waves:
   - enemies:
     - {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833, type: 3}
-    amount: 25
-    interval: 1.2
+    amount: 10
+    interval: 1.5
     firstToSecondRatio: 0
   - enemies:
     - {fileID: 8319903020353679580, guid: bdd0cd45d18c51d48b9e18006168ae21, type: 3}
@@ -630,7 +630,7 @@ MonoBehaviour:
   - enemies:
     - {fileID: 5543269025601578204, guid: 0098849068842e14b9c3ec2b06044e0a, type: 3}
     - {fileID: 3010130404623205330, guid: f4e538ccc7934e24eaef9bee3e51f833, type: 3}
-    amount: 60
+    amount: 25
     interval: 1.5
     firstToSecondRatio: 0
   - enemies:

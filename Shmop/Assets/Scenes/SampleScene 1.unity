@@ -911,20 +911,34 @@ MonoBehaviour:
   buttonWaitTime_: 1
   inHyperDrive_: 0
   text_:
-  - '>An advanced alien race will attack tomorrow. The plan is to have you fly in
-    a few hours, take out some scouting ships and their base before they launch their
-    attack. '
-  - '>During your mission we will send you a care package every hyper-jump. A little
-    something to help you. Choose wisely.'
-  - '>Be careful now. We received intel that your next enemy cannot be killed. Dodge
-    and pray.'
-  - '>Remember, we all depend on you. No pressure tho :)'
-  - '>I mean, if  you fuck this up, the whole galaxy dies ;)'
-  - '>Oops, forgot to tell you about the boss. My baaaad ^-^'
-  - '>Anyway, you got this.'
-  - '>Damn, you good at this'
-  - '>Have fun ;)'
-  - '>See? I had no doubts. Good job ;)'
+  - ">Alright, I\u2019m sure that the General briefed you on the situation, now it\u2019s
+    my turn. Although the ship has some really advanced space technology, we made
+    the controls intuitive. Just pilot it like your rusty spaceship. Give it a try."
+  - ">See? Told you it won\u2019t be that bad. That was just the beginning so stay
+    focused. \r\n   >What are you experiencing right now is called a hyper-jump.
+    Their base is situated quite far away so going through them is necessary.\t\r\n"
+  - ">During your mission we will send you care packages. A little something to help
+    you. \r\n   >We must be careful not to be seen by the enemy, so we will send
+    them whenever we can. Choose wisely and stay safe.\r"
+  - "   >Be careful now. We received intel that your next enemy cannot be killed.
+    Dodge and pray. \r\n   >And don\u2019t forget, we all count on you. But hey,
+    no pressure.\r\n   >Stay safe, Space Ranger.\r\n"
+  - ">You are doing great so far, but this is not over yet. You seem to get close.
+    Our systems are detecting intense activity ahead.\r\n   >Everybody here on earth
+    depends on you, don\u2019t mess this up.\r\n"
+  - "   >That was pretty intense, not going to lie. But hey, you\u2019re still alive.\r\n  
+    >There is no time to celebrate just yet, there is plenty of danger ahead.\r\n  
+    >See you soon, Space Ranger.\r\n"
+  - ">Alright, this is it. The mothership is right ahead of you. It will be a tough
+    fight, but I\u2019m sure you can make it.\r\n   >See you on the other side, Ranger.\r"
+  - ">That\u2019s\u2026odd. The mothership was destroyed but we can see high levels
+    of activity ahead.\r\n   >Proceed with caution. And whatever you do, don\u2019t
+    die.\r\n"
+  - ">Oh no\u2026We were wrong\u2026We just picked up some strange signals. It seems
+    that the ship you just destroyed was just one of their carriers.\r\n   >I can\u2019t
+    tell for sure what lies ahead, but it\u2019s going to be bad.\r\n   >Stay strong.\r\n"
+  - "> I\u2026I can\u2019t believe it. You did it. YOU DID IT!\r\n\t> I mean, I had
+    no doubts about you, of course.\r\n\t> Time to return home, Space Ranger.\r\n"
 --- !u!1001 &284903609
 PrefabInstance:
   m_ObjectHideFlags: 0

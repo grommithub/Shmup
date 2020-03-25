@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 2
   name_: Upgraded Havoc
-  description_: Upgraded version of havoc
+  description_: 'An improved "Havoc" prototype. "Havoc 2.0" recharges faster, lasts
+    longer and the bullets'' damage is not doubled but tripled! Also ship handling
+    is slightly improved during its use. '
   sprite_: {fileID: 21300000, guid: e2eb2fecceb9e554f8bdff5ced33fd33, type: 3}
   index_: 3
   upgradeIsPicked_: 1

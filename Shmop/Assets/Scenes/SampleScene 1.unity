@@ -1547,7 +1547,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _bossTwo
       value: 
-      objectReference: {fileID: 8300000, guid: 95dc645f5ac92164f844db6ecef4975e, type: 3}
+      objectReference: {fileID: 8300000, guid: 8a930f57506f1704ea6a8a6adb6d6c35, type: 3}
     - target: {fileID: 754662394432919393, guid: 2dc1e7b8c1dab0b4ebbc29924d352cdd,
         type: 3}
       propertyPath: _chargingsnail

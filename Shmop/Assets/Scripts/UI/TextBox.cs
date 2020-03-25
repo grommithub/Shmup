@@ -99,7 +99,7 @@ public class TextBox : MonoBehaviour
             }
             else
             {
-                if (stageCounter_ == 1 || stageCounter_ == 3 || stageCounter_ == 5 || stageCounter_ == 7)
+                if (stageCounter_ == 1 || stageCounter_ == 2 || stageCounter_ == 3 || stageCounter_ == 5 || stageCounter_ == 6)
                 {
                     callAbilityBox_.Invoke();
                     stageCounter_++;

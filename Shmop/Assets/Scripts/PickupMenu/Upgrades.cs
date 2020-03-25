@@ -6,6 +6,7 @@ public abstract class Upgrades : ScriptableObject
 {
     public int upgradeType_; //1 is ability unlock, 2 is ability upgrade, 3 is player upgrade
     public string name_; //upgrade's name
+    [TextArea]
     public string description_; //upgrade's description: specs, key assigned and short description
     public Sprite sprite_; //sprite of an icon 
 

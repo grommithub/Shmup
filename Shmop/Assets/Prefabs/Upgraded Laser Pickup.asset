@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 2
   name_: Upgraded Laser
-  description_: Upgraded version of laser
+  description_: '"BFLB-900" deals double damage, lasts longer and recharges slightly
+    faster'
   sprite_: {fileID: 21300000, guid: f3b007c53a621e4498072e71cf38e32d, type: 3}
   index_: 0
   upgradeIsPicked_: 0

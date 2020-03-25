@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 1
   name_: Havoc
-  description_: Powerful weapon
+  description_: 'An experimental prototype module for your weapon. It doubles damage
+    of your ammunition but beware: it is very unstable and only skilled pilots are
+    able to handle the ship during its use.'
   sprite_: {fileID: 21300000, guid: 443fc8c2ade55324c92bcf6abdbd18ab, type: 3}
   index_: 3
   upgradeIsPicked_: 1

@@ -653,10 +653,6 @@ MonoBehaviour:
     amount: 1
     interval: 0.4
     firstToSecondRatio: 0
-  - enemies: []
-    amount: 10
-    interval: 1
-    firstToSecondRatio: 0
   _waveNum: 0
   _pauseTime: 3
 --- !u!1 &108289261 stripped

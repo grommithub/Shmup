@@ -12,14 +12,13 @@ public class TextBox : MonoBehaviour
     [SerializeField] private GameObject textHolder_;
     [SerializeField] private GameObject inActivePosition_;
     [SerializeField] private GameObject activePosition_;
+    [SerializeField] private GameObject hint_;
     [SerializeField] private UnityEvent preIntroductionState_;
     [SerializeField] private UnityEvent postIntroductionState_;
     [SerializeField] private UnityEvent callAbilityBox_;
     [SerializeField] private float moveTime_;
-    [SerializeField] private float centeringTime_;
     private bool firstTime_;
     private bool isTutorial_;
-    private bool isCentering_;
     private char[] letters_;
     private int arraySize_;
     private int stageCounter_;
@@ -41,13 +40,13 @@ public class TextBox : MonoBehaviour
         button_.SetActive(false);
 
         rb2D_ = GetComponent<Rigidbody2D>();
+        hint_.SetActive(false);
         inActivePos_ = inActivePosition_.transform.position;
         activePos_ = activePosition_.transform.position;
         arraySize_ = text_.Length;
         firstTime_ = true;
         isTutorial_ = true;
         inHyperDrive_ = false;
-        isCentering_ = false;
         stageCounter_ = 1;
         i = 0;
 
@@ -126,6 +125,8 @@ public class TextBox : MonoBehaviour
 
         letters_ = text_[index].ToCharArray();
 
+        hint_.SetActive(true);
+
         for (int i = 0; i < letters_.Length; i++)
         {
             textMeshPro_.text += letters_[i];
@@ -137,6 +138,7 @@ public class TextBox : MonoBehaviour
             yield return new WaitForSeconds(revealTime_);
         }
 
+        hint_.SetActive(false);
         yield return new WaitForSeconds(buttonWaitTime_);
         button_.SetActive(true);
     }

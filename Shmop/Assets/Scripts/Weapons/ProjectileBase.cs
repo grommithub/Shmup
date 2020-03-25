@@ -27,7 +27,8 @@ public class ProjectileBase : MonoBehaviour
         if(startSound != null) SoundPlayer.PlayOneShot(startSound);
 
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _normalSprite = _spriteRenderer.sprite;        
+        _normalSprite = _spriteRenderer.sprite;
+        damage = 1;
 
         if (!goingRight) directionMultiplier *= -1;
         _rb = GetComponent<Rigidbody2D>();

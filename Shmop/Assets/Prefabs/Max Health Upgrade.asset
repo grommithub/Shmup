@@ -9,14 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12c2f89bcebe5c499f04325c755aedf, type: 3}
-  m_Name: HavocPickup
+  m_Script: {fileID: 11500000, guid: 45a44f33ffde7c345bf31c429ed8f951, type: 3}
+  m_Name: Max Health Upgrade
   m_EditorClassIdentifier: 
-  upgradeType_: 1
-  name_: Havoc
-  description_: Powerful weapon
-  sprite_: {fileID: 21300000, guid: 443fc8c2ade55324c92bcf6abdbd18ab, type: 3}
-  index_: 3
+  upgradeType_: 3
+  name_: Max Health Upgrade
+  description_: Increased HP
+  sprite_: {fileID: 21300000, guid: 34a2f1339c7fc094bab850395685d204, type: 3}
+  index_: 1
   upgradeIsPicked_: 1
   abilityIsUnlocked_: 0
-  ability_: {fileID: 11400000, guid: bebbd0cb272f0b548a5f3ea4cb087c0a, type: 2}
+  maxHealth_: 12
+  firerate_: 0
+  speed_: 0

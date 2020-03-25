@@ -11,6 +11,7 @@ public class UpgradeIconHandler : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI TMProComponent_;
     [SerializeField] private GameObject UI_;
+    [SerializeField] private GameObject player_;
     [SerializeField] private GameObject abilityBox_;
     private UpgradeInteraction upgradeInteraction_;
 
@@ -31,7 +32,17 @@ public class UpgradeIconHandler : MonoBehaviour
 
     public void PickAbility()
     {
-        upgrade_.Initialize(UI_);
+        if (upgrade_.upgradeType_ == 3)
+        {
+            upgrade_.Initialize(player_);
+        }
+        else if (upgrade_.upgradeType_ == 1 || upgrade_.upgradeType_ == 2)
+        {
+            upgrade_.Initialize(UI_);
+        }
+        else
+            Debug.LogError("UpgradeIconHandler.cs error: no proper upgrade type value was received");
+
         upgrade_.UseUpgrade();
         upgradeInteraction_.DeleteFromPool(upgrade_.index_);
     }

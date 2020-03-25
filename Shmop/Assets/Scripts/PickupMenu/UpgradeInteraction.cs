@@ -17,6 +17,9 @@ public class UpgradeInteraction : MonoBehaviour
     private UpgradeIconHandler upgradeIconHandlerComponent_;
     private int optionsAmount_;
     private int poolSize_;
+    private bool laserIsUnlocked_;
+    private bool havocIsUnlocked_;
+    private bool shieldIsUnlocked_;
     private int[] bannedNumbers_ = { };
 
     //ew
@@ -24,6 +27,9 @@ public class UpgradeInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        laserIsUnlocked_ = false;
+        havocIsUnlocked_ = false;
+        shieldIsUnlocked_ = false;
         optionsAmount_ = buttons_.Length - 1;
         poolSize_ = upgrades_.Count - 1;
     }
@@ -45,24 +51,76 @@ public class UpgradeInteraction : MonoBehaviour
         for (int i = 0; i <= optionsAmount_; i++)
         {
             int rng = Random.Range(0, poolSize_ + 1);
-            if(upgrades_[rng].upgradeIsPicked_)
+            bool isSuitable = false;
+
+            while(upgrades_[rng].upgradeIsPicked_ || !isSuitable)
             {
-                while(upgrades_[rng].upgradeIsPicked_)
+                rng = Random.Range(0, poolSize_ + 1);
+                if (upgrades_[rng].upgradeType_ == 2)
                 {
-                    rng = Random.Range(0, poolSize_ + 1);
+                    if (upgrades_[rng].name_ == "Upgraded Havoc")
+                    {
+                        if (!havocIsUnlocked_)
+                        {
+                            isSuitable = false;
+                        }
+                        else
+                        {
+                            isSuitable = true;
+                        }
+                    }
+                    else if (upgrades_[rng].name_ == "Upgraded Laser")
+                    {
+                        if (!laserIsUnlocked_)
+                        {
+                            isSuitable = false;
+                        }
+                        else
+                        {
+                            isSuitable = true;
+                        }
+                    }
+                    else if (upgrades_[rng].name_ == "Upgraded Shield")
+                    {
+                        if (!shieldIsUnlocked_)
+                        {
+                            isSuitable = false;
+                        }
+                        else
+                        {
+                            isSuitable = true;
+                        }
+                    }
                 }
+                else
+                {
+                    isSuitable = true;
+                }                
             }
-            else
-            {
-                Debug.Log(rng);
-                upgrades_[rng].upgradeIsPicked_ = true;
-                Initialize(upgrades_[rng], buttons_[i], rng);
-            }
+
+            Debug.Log(rng);
+            upgrades_[rng].upgradeIsPicked_ = true;
+            Initialize(upgrades_[rng], buttons_[i], rng);
         }
     }
 
     public void DeleteFromPool(int index)
     {
+        if (upgrades_[index].upgradeType_ == 1)
+        {
+            if (upgrades_[index].name_ == "Havoc")
+            {
+                havocIsUnlocked_ = true;
+            }
+            else if (upgrades_[index].name_ == "Laser")
+            {
+                laserIsUnlocked_ = true;
+            }
+            else if (upgrades_[index].name_ == "Shield")
+            {
+                shieldIsUnlocked_ = true;
+            }
+        }
         upgrades_.RemoveAt(index);
     }
 

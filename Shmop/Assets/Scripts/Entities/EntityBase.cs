@@ -7,9 +7,7 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
-    [SerializeField] protected int _maxHealth;
     [SerializeField] protected int _health;
-    [SerializeField] protected float _speed;
     protected static ColorController _colourController;
     protected ColorSprite _colourSprite;
     protected Rigidbody2D _rb;
@@ -20,6 +18,9 @@ public class EntityBase : MonoBehaviour
 
     [SerializeField] private float _rotationSpeed, _rotationAmount;
     protected Vector2 _movementVector;
+
+    public int _maxHealth;
+    public float _speed;
 
     protected virtual void Start()
     {

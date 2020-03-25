@@ -1058,7 +1058,7 @@ MonoBehaviour:
   maxExplosionDistance: 3
   _rotationSpeed: 0
   _rotationAmount: 0
-  _maxHealth: 60
+  _maxHealth: 200
   _speed: 10
   _onCollideDamage: 1
   _weapon: {fileID: 8036146542056701170}

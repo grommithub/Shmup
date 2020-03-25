@@ -8,6 +8,8 @@ public class RandomSpawner : MonoBehaviour
     [SerializeField] private float _interval, _xPos;
     private float _maxY, _minY, _minWait, _maxWait, _lastSpawn;
 
+    public Wave wave;
+
     public bool doneSpawning = true; 
 
     private int _enemiesToSpawn;
@@ -32,15 +34,21 @@ public class RandomSpawner : MonoBehaviour
         StartCoroutine("TimedSpawning");
     }
 
+    public void SpawnWave(Wave w)
+    {
+        wave = w;
+        StartCoroutine(TimedSpawning());
+    }
+
     private IEnumerator TimedSpawning()
     {
         doneSpawning = false;
-        for(int i = 0; i < _enemiesToSpawn; i++)
+        for(int i = 0; i < wave.amount; i++)
         {
             float y = Random.Range(_minY , _maxY);
-            GameObject e = Instantiate(_spawnItem, new Vector3(_xPos, y, 0f), Quaternion.identity);
+            GameObject e = Instantiate(wave.enemies[i % wave.enemies.Length], new Vector3(_xPos, y, 0f), Quaternion.identity);
             if(_enemyParent != null) e.transform.SetParent(_enemyParent);
-            yield return new WaitForSeconds(_interval);
+            yield return new WaitForSeconds(wave.interval);
         }
         doneSpawning = true;
     }

@@ -62,7 +62,7 @@ public class Waves : MonoBehaviour
             return false;
         }
         Wave w = _waves[index];
-        _spawner.SpawnWave(w.enemy, w.amount, w.interval);
+        _spawner.SpawnWave(w);
         return true;
     }
 
@@ -71,7 +71,8 @@ public class Waves : MonoBehaviour
 [System.Serializable]
 public class Wave
 {
-    public GameObject enemy;
+    public GameObject[] enemies = new GameObject[0];
     public int amount;
     public float interval;
+    public int firstToSecondRatio;
 }

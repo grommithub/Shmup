@@ -627,7 +627,7 @@ MonoBehaviour:
   - enemy: {fileID: 8036146541917799967, guid: 4dc237ba62ec10a468fcd45f6edfe5cc, type: 3}
     amount: 1
     interval: 1
-  _waveNum: 0
+  _waveNum: 8
   _pauseTime: 3
 --- !u!1 &108289261 stripped
 GameObject:

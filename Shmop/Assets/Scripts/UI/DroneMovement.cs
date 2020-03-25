@@ -8,6 +8,8 @@ public class DroneMovement : MonoBehaviour
     [SerializeField] private GameObject player_;
     [SerializeField] private float delay_;
     [SerializeField] private float moveTime_;
+    [SerializeField] private Sprite[] sprites_ = new Sprite[2]; //array of 2 sprites: 1st sprite ([0]) is for the drone before ability is picked, 2nd ([1]) - after)
+    private SpriteRenderer spriteRenderer_;
 
     private Rigidbody2D rb2D_;
     private Vector3 inActivePos_;
@@ -20,6 +22,12 @@ public class DroneMovement : MonoBehaviour
     {
         if(isActive_)
         {
+            spriteRenderer_.sprite = sprites_[0];
+            yield return new WaitForSeconds(delay_);
+        }
+        else
+        {
+            spriteRenderer_.sprite = sprites_[1];
             yield return new WaitForSeconds(delay_);
         }
 
@@ -50,6 +58,7 @@ public class DroneMovement : MonoBehaviour
     {
         rb2D_ = GetComponent<Rigidbody2D>();
         inActivePos_ = droneInActivePosition_.transform.position;
+        spriteRenderer_ = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 3
   name_: Firerate Upgrade
-  description_: Increased firerate
+  description_: A newly acquired  alien technology allows us to increase your weapon's
+    firerate by 50%!
   sprite_: {fileID: 21300000, guid: 2f1d091f364934c459de17d1dcab7f5b, type: 3}
   index_: 0
   upgradeIsPicked_: 0
   abilityIsUnlocked_: 0
   maxHealth_: 0
-  firerate_: 0.15
+  firerate_: 0.175
   speed_: 0

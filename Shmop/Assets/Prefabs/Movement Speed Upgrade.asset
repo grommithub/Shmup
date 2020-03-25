@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 3
   name_: Movement Speed Upgrade
-  description_: Incrased ship's movement speed
+  description_: Acquire new supercharger system for your ship's engine. Now you can
+    maneuver significantly faster than before.
   sprite_: {fileID: 21300000, guid: 64ea83a10416eaf40a710f28b0e27025, type: 3}
   index_: 2
   upgradeIsPicked_: 1

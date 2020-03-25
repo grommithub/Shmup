@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 3
   name_: Max Health Upgrade
-  description_: Increased HP
+  description_: Improves your ship's armor. Now you can absorb up to 50% more damage
+    before the ship will be demolished
   sprite_: {fileID: 21300000, guid: 34a2f1339c7fc094bab850395685d204, type: 3}
   index_: 1
   upgradeIsPicked_: 1
   abilityIsUnlocked_: 0
-  maxHealth_: 12
+  maxHealth_: 15
   firerate_: 0
   speed_: 0

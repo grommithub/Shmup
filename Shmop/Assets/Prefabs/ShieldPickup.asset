@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 1
   name_: Shield
-  description_: Shield that deflects all projectiles
+  description_: This module creates a force field around the ship that defends it
+    from all threats and deflects projectiles for a brief period of time
   sprite_: {fileID: 21300000, guid: 896cf0abb04288d4ab19dba98107de95, type: 3}
   index_: 3
   upgradeIsPicked_: 1

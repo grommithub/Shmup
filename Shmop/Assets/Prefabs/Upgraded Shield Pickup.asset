@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType_: 2
   name_: Upgraded Shield
-  description_: Upgraded version of a shield
+  description_: Upgraded version of a force field lasts twice as long as the previous
+    one.
   sprite_: {fileID: 21300000, guid: 1d965e0736dfb5f4a81e3692511434e4, type: 3}
   index_: 0
   upgradeIsPicked_: 0

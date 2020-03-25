@@ -8,7 +8,7 @@ public class SoundPlayer : MonoBehaviour
     private static AudioSource _audioSource;
     public static SoundPlayer _soundPlayer;
 
-    [SerializeField] public AudioClip _bossIntro, _bossLoop, _bossTwo, _boom, _playerDamage, enemyHurt;
+    [SerializeField] public AudioClip _bossIntro, _bossLoop, _bossTwo, _boom, _playerDamage, _chargingsnail, enemyHurt;
 
     [SerializeField] private static float explosionFrequency = 0.1f;
     
@@ -24,6 +24,11 @@ public class SoundPlayer : MonoBehaviour
         _audioSource.Play();
     }
 
+    public static void Playchargingsnail()
+    {
+        _audioSource.clip = _soundPlayer._chargingsnail;
+        _audioSource.Play();
+    }
     public static void PlayBossMusic()
     {
         _audioSource.clip = _soundPlayer._bossLoop;

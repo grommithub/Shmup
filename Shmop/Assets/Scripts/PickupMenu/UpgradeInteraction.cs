@@ -130,7 +130,7 @@ public class UpgradeInteraction : MonoBehaviour
         iconImage_ = button_in.GetComponent<Image>();
         upgradeIconHandlerComponent_ = button_in.GetComponent<UpgradeIconHandler>();
         iconImage_.sprite = upgrade_in.sprite_;
-        string text = "Name: " + upgrade_in.name_ + "\n" + "Description: " + upgrade_in.description_;
+        string text = "Name: " + upgrade_in.name_ + "\n \n" + "Description: " + upgrade_in.description_;
         upgradeIconHandlerComponent_.description_ = text;
         upgradeIconHandlerComponent_.upgrade_ = upgrade_in;
         upgrade_in.index_ = index;

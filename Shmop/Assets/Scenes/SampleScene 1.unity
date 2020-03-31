@@ -911,29 +911,30 @@ MonoBehaviour:
   buttonWaitTime_: 1
   inHyperDrive_: 0
   text_:
-  - ">Alright, I\u2019m sure that the General briefed you on the situation, now it\u2019s
-    my turn. Although the ship has some really advanced space technology, we made
-    the controls intuitive. Just pilot it like your rusty spaceship. Give it a try."
-  - ">See? Told you it won\u2019t be that bad. That was just the beginning so stay
-    focused. \r\n   >What are you experiencing right now is called a hyper-jump.
-    Their base is situated quite far away so going through them is necessary.\t\r\n"
-  - ">During your mission we will send you care packages. A little something to help
-    you. \r\n   >We must be careful not to be seen by the enemy, so we will send
-    them whenever we can. Choose wisely and stay safe.\r"
-  - "   >Be careful now. We received intel that your next enemy cannot be killed.
-    Dodge and pray. \r\n   >And don\u2019t forget, we all count on you. But hey,
-    no pressure.\r\n   >Stay safe, Space Ranger.\r\n"
-  - ">You are doing great so far, but this is not over yet. You seem to get close.
+  - "   >Alright, I\u2019m sure that the General briefed you on the situation, now
+    it\u2019s my turn. Although the ship has some really advanced space technology,
+    we made the controls intuitive. Just pilot it like your rusty spaceship."
+  - "   >During your mission we will send you care packages. A little something to
+    help you.\r\n   >What are you experiencing right now is called a hyper-jump.
+    Their base is situated quite far away so going through them is necessary.\r\n"
+  - "   >Be careful now. We received intel that your next enemy is fast and cannot
+    be killed. Dodge and pray. \r\n   >And don\u2019t forget, we all count on you.
+    But hey, no pressure\r\n"
+  - "   >You are doing great so far, but this is not over yet. You seem to get close.
     Our systems are detecting intense activity ahead.\r\n   >Everybody here on earth
-    depends on you, don\u2019t mess this up.\r\n"
-  - "   >That was pretty intense, not going to lie. But hey, you\u2019re still alive.\r\n  
-    >There is no time to celebrate just yet, there is plenty of danger ahead.\r\n  
-    >See you soon, Space Ranger.\r\n"
-  - ">Alright, this is it. The mothership is right ahead of you. It will be a tough
-    fight, but I\u2019m sure you can make it.\r\n   >See you on the other side, Ranger.\r"
-  - ">That\u2019s\u2026odd. The mothership was destroyed but we can see high levels
+    depends on you, don\u2019t mess this up.\r"
+  - "   >Alright, this is it. The mothership is right ahead of you. It will be a
+    tough fight, but I\u2019m sure you can make it.\r\n   >See you on the other side,
+    Ranger.\r"
+  - "   >That\u2019s\u2026odd. The mothership was destroyed but we can see high levels
     of activity ahead.\r\n   >Proceed with caution. And whatever you do, don\u2019t
     die.\r\n"
+  - "   >Oh no\u2026We were wrong\u2026We just picked up some strange signals. It
+    seems that the ship you just destroyed was just one of their carriers.\r\n  
+    >I can\u2019t tell for sure what lies ahead, but it\u2019s going to be bad.\r\n  
+    >Stay strong.\r\n"
+  - "   > I\u2026I can\u2019t believe it. You did it. YOU DID IT!\r\n   > I mean,
+    I had no doubts about you, of course.\r\n   > Time to return home, Space Ranger.\r\n"
   - ">Oh no\u2026We were wrong\u2026We just picked up some strange signals. It seems
     that the ship you just destroyed was just one of their carriers.\r\n   >I can\u2019t
     tell for sure what lies ahead, but it\u2019s going to be bad.\r\n   >Stay strong.\r\n"
